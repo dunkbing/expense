@@ -45,7 +45,7 @@ export default function Basic() {
 		<div className="min-w-[330px] divide-y divide-zinc-600 rounded-lg bg-zinc-900 text-left shadow-sm sm:mr-8">
 			<div className="p-5 py-6">
 				<h2 className="text-3xl font-extrabold leading-6 text-white">Basic</h2>
-				<p className="font-default mt-2 mb-2 text-zinc-300">Free forever with limits.</p>
+				<p className="font-default mb-2 mt-2 text-zinc-300">Free forever with limits.</p>
 				<p className="mt-4">
 					<span className="text-3xl font-extrabold text-white">
 						{formatCurrency(tiers.monthly.basic, paymentOptions.currency, paymentOptions.locale, 0, 0)}

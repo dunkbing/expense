@@ -37,7 +37,7 @@ export default function Modal({ show, title, children, onHide, inputRef }) {
 										{title}
 										<button
 											onClick={onHide}
-											className="absolute top-[3px] right-[4px] flex h-[44px] w-[44px] cursor-pointer items-center justify-center rounded-full text-gray-500 transition-all duration-75 hover:bg-gray-100 focus:outline-none active:bg-gray-200"
+											className="absolute right-[4px] top-[3px] flex h-[44px] w-[44px] cursor-pointer items-center justify-center rounded-full text-gray-500 transition-all duration-75 hover:bg-gray-100 focus:outline-none active:bg-gray-200"
 										>
 											<XMarkIcon className="h-6 w-6 text-slate-700 hover:text-slate-500" />
 										</button>

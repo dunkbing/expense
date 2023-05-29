@@ -113,7 +113,7 @@ export default function Terms() {
 						this page. These terms and conditions are effective as of 2023-01-01
 					</p>
 				</div>
-				<div className="font-default relative m-4 mt-3 mb-20 max-w-3xl pt-3 sm:m-auto sm:mb-20">
+				<div className="font-default relative m-4 mb-20 mt-3 max-w-3xl pt-3 sm:m-auto sm:mb-20">
 					<h2 className="mb-3 mt-2 text-2xl font-extrabold leading-6">Contact Us</h2>
 					<p className="mt-2">
 						If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at{' '}

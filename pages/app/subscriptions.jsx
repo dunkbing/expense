@@ -126,7 +126,7 @@ export default function Subscriptions({ user }) {
 
 			<div className="h-ful mb-20">
 				<div className="mb-2 flex justify-between">
-					<h1 className="mr-3 mb-2 text-2xl font-extrabold text-black max-sm:mb-4 max-sm:ml-[45px]">Subscriptions</h1>
+					<h1 className="mb-2 mr-3 text-2xl font-extrabold text-black max-sm:mb-4 max-sm:ml-[45px]">Subscriptions</h1>
 				</div>
 
 				<h2 className="mb-4 text-black">Summary</h2>

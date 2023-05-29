@@ -1,11 +1,9 @@
 import { createServerSupabaseClient } from '@supabase/auth-helpers-nextjs';
-import WelcomeEmail from 'emails/WelcomeEmail';
 
-import resend from 'lib/email';
 import prisma from 'lib/prisma';
 import { hasPremiumBillingCycleEnded } from 'lib/usage';
 
-import { sentFromEmailId, tierNames } from 'constants/index';
+import { tierNames } from 'constants/index';
 
 export default function enforceAuth(req, res) {
 	return async (context) => {
@@ -44,12 +42,12 @@ export default function enforceAuth(req, res) {
 		// If its new signup, send welcome email once and update bool
 		if (!serializedUserData.new_signup_email) {
 			try {
-				await resend.sendEmail({
-					from: sentFromEmailId,
-					subject: '✨ Welcome to Expense.fyi',
-					to: session.user.email,
-					react: <WelcomeEmail />,
-				});
+				// await resend.sendEmail({
+				// 	from: sentFromEmailId,
+				// 	subject: '✨ Welcome to Expense.fyi',
+				// 	to: session.user.email,
+				// 	react: <WelcomeEmail />,
+				// });
 				await prisma.users.update({ where: { id: session.user.id }, data: { new_signup_email: true } });
 			} catch (error) {
 				throw error;

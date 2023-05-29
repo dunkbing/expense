@@ -134,7 +134,7 @@ export default function AddSubscription({ show, selected, onHide, onSubmit, load
 							<span className="block text-sm font-medium text-zinc-600">Paying</span>
 							<select
 								name="paid"
-								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white py-2 px-3 text-sm text-zinc-600 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
+								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 py-2 text-sm text-zinc-600 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 								onChange={(event) => {
 									setState({ ...state, paid: event.target.value });
 								}}

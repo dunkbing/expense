@@ -108,7 +108,7 @@ export default function AddExpense({ show, selected, lookup, onHide, onSubmit, l
 							</span>
 							<div className="flex items-center justify-between">
 								<input
-									className="mt-2 mr-4 block h-10 w-full appearance-none rounded-md bg-white px-3 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
+									className="mr-4 mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 									type="number"
 									placeholder="199"
 									required
@@ -143,7 +143,7 @@ export default function AddExpense({ show, selected, lookup, onHide, onSubmit, l
 							</span>
 							<select
 								name="category"
-								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white py-2 px-3 pr-8 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
+								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 py-2 pr-8 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 								onChange={(event) => {
 									setState({ ...state, category: event.target.value });
 								}}
@@ -172,7 +172,7 @@ export default function AddExpense({ show, selected, lookup, onHide, onSubmit, l
 							<span className="block text-sm font-medium text-zinc-800">Paid</span>
 							<select
 								name="paid via"
-								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white py-2 px-3 pr-8 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
+								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 py-2 pr-8 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 								onChange={(event) => {
 									setState({ ...state, paid_via: event.target.value });
 								}}

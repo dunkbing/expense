@@ -17,7 +17,7 @@ const features = [
 		name: 'Secure Sign in',
 		Icon: () => (
 			<svg
-				className="mr-2 ml-[-6px] mt-[1px]"
+				className="ml-[-6px] mr-2 mt-[1px]"
 				xmlns="http://www.w3.org/2000/svg"
 				height="20"
 				width="20"
@@ -35,7 +35,7 @@ const features = [
 		description: 'Your private data, such as name, price, and notes, etc., is securely encrypted in the database.',
 		Icon: () => (
 			<svg
-				className="mr-2 ml-[-6px] mt-[-1px]"
+				className="ml-[-6px] mr-2 mt-[-1px]"
 				xmlns="http://www.w3.org/2000/svg"
 				height="20"
 				width="20"
@@ -51,7 +51,7 @@ const features = [
 		description: 'You can understand your spending habits by viewing detailed reports on the overview page. ',
 		Icon: () => (
 			<svg
-				className="mr-2 ml-[-6px] mt-[1px]"
+				className="ml-[-6px] mr-2 mt-[1px]"
 				xmlns="http://www.w3.org/2000/svg"
 				height="20"
 				width="20"
@@ -67,7 +67,7 @@ const features = [
 		description: 'Easily track subscriptions; no need to remember renewal dates or maintain a messy spreadsheet.',
 		Icon: () => (
 			<svg
-				className="mr-2 ml-[-6px] mt-[1px]"
+				className="ml-[-6px] mr-2 mt-[1px]"
 				xmlns="http://www.w3.org/2000/svg"
 				height="20"
 				width="20"
@@ -86,7 +86,7 @@ const features = [
 			'Access from multiple devices, including smartphones and laptops, makes it easy to track expenses on-the-go from any device.',
 		Icon: () => (
 			<svg
-				className="mr-2 ml-[-6px] mt-[1px]"
+				className="ml-[-6px] mr-2 mt-[1px]"
 				xmlns="http://www.w3.org/2000/svg"
 				height="20"
 				width="20"
@@ -102,7 +102,7 @@ const features = [
 		description: 'Export your data in the CSV file format, which is widely supported.',
 		Icon: () => (
 			<svg
-				className="mr-2 ml-[-6px] mt-[1px] h-5 w-5"
+				className="ml-[-6px] mr-2 mt-[1px] h-5 w-5"
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
 				viewBox="0 0 24 24"
@@ -149,7 +149,7 @@ export default function Home() {
 
 						<Link
 							href={signInUrl}
-							className="leading-2 mr-4 inline-flex h-[36px] items-center overflow-hidden rounded-full bg-zinc-900 py-1 px-4 text-sm font-medium text-white transition hover:bg-zinc-700"
+							className="leading-2 mr-4 inline-flex h-[36px] items-center overflow-hidden rounded-full bg-zinc-900 px-4 py-1 text-sm font-medium text-white transition hover:bg-zinc-700"
 						>
 							Sign in
 						</Link>
@@ -178,7 +178,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="relative z-10 m-auto max-w-5xl pt-4">
-					<div className="mx-auto mt-16 mb-16 max-w-md px-3 text-center sm:max-w-lg sm:px-0">
+					<div className="mx-auto mb-16 mt-16 max-w-md px-3 text-center sm:max-w-lg sm:px-0">
 						<h1 className="mt-4	text-4xl font-black leading-[1.15] tracking-[-0.03em] text-black sm:text-5xl sm:leading-[1.15]">
 							Effortlessly Track and Manage{' '}
 							<span className="bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent">
@@ -195,13 +195,13 @@ export default function Home() {
 						<div className="mt-12 flex justify-center">
 							<Link
 								href={signUpUrl}
-								className="inline-flex h-[36px] items-center justify-center rounded-full bg-zinc-900 py-2.5 px-4 text-sm font-medium text-white hover:bg-zinc-700 hover:shadow"
+								className="inline-flex h-[36px] items-center justify-center rounded-full bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white hover:bg-zinc-700 hover:shadow"
 							>
 								Try it for Free
 							</Link>
 							<Link
 								href={siteUrls.githubUrl}
-								className="ml-6 inline-flex h-[36px] items-center justify-center  rounded-full bg-white/0 py-2.5 px-4 text-sm font-medium text-slate-900 ring-1 ring-slate-900/10 hover:bg-gray-100 hover:shadow"
+								className="ml-6 inline-flex h-[36px] items-center justify-center  rounded-full bg-white/0 px-4 py-2.5 text-sm font-medium text-slate-900 ring-1 ring-slate-900/10 hover:bg-gray-100 hover:shadow"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +218,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="mx-auto mt-16 mb-16 max-w-md px-3 text-center sm:max-w-lg sm:px-0">
+					<div className="mx-auto mb-16 mt-16 max-w-md px-3 text-center sm:max-w-lg sm:px-0">
 						<h2 className="mt-4 text-3xl font-extrabold tracking-[-0.03em] text-black sm:text-4xl">
 							<span className="bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent">
 								Why to use
@@ -245,8 +245,8 @@ export default function Home() {
 						</ul>
 					</div>
 				</div>
-				<div className="mx-auto mt-16 mb-16 max-w-2xl px-3 ">
-					<h2 className="mt-8 mb-12 text-center text-3xl font-extrabold tracking-[-0.03em] text-black sm:text-4xl">
+				<div className="mx-auto mb-16 mt-16 max-w-2xl px-3 ">
+					<h2 className="mb-12 mt-8 text-center text-3xl font-extrabold tracking-[-0.03em] text-black sm:text-4xl">
 						Simple yet,{' '}
 						<span className="bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent">
 							Powerful
@@ -313,7 +313,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div className="mx-auto mt-16 mb-16 grid max-w-md justify-center px-3 text-center sm:px-0 md:max-w-[600px]">
+				<div className="mx-auto mb-16 mt-16 grid max-w-md justify-center px-3 text-center sm:px-0 md:max-w-[600px]">
 					<h2 className="mt-0 text-3xl font-extrabold tracking-[-0.03em] text-black sm:text-4xl">
 						Our{' '}
 						<span className="bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent">
@@ -324,7 +324,7 @@ export default function Home() {
 						Start for free, no credit card is required.
 					</p>
 
-					<div className="relative mt-4 mb-4 hidden min-w-[245px] justify-center">
+					<div className="relative mb-4 mt-4 hidden min-w-[245px] justify-center">
 						<div className="mt-6 rounded-3xl border border-zinc-800 bg-zinc-900 p-0.5">
 							<div className="flex">
 								<button
@@ -354,7 +354,7 @@ export default function Home() {
 						<Premium />
 					</div>
 				</div>
-				<div className="mx-auto mt-16 mb-16 max-w-md px-3 text-center sm:max-w-lg sm:px-0">
+				<div className="mx-auto mb-16 mt-16 max-w-md px-3 text-center sm:max-w-lg sm:px-0">
 					<h2 className="mt-4 text-3xl font-extrabold tracking-[-0.03em] text-black sm:text-4xl sm:leading-[3.5rem]">
 						Proudly{' '}
 						<span className="bg-gradient-to-r from-blue-400 to-sky-600 bg-clip-text text-transparent">
@@ -366,7 +366,7 @@ export default function Home() {
 					</p>
 					<Link
 						href={siteUrls.githubUrl}
-						className="mt-6 inline-flex h-[36px] items-center justify-center  rounded-full bg-white/0 py-2.5 px-4 text-sm font-medium text-slate-900 ring-1 ring-slate-900/10 hover:bg-gray-100 hover:shadow"
+						className="mt-6 inline-flex h-[36px] items-center justify-center  rounded-full bg-white/0 px-4 py-2.5 text-sm font-medium text-slate-900 ring-1 ring-slate-900/10 hover:bg-gray-100 hover:shadow"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

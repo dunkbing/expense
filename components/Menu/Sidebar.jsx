@@ -135,7 +135,7 @@ export default function Sidebar({ user, className, overrideClassname, onHide, sh
 
 	return (
 		<nav
-			className={`z-[1] flex min-h-full flex-col bg-zinc-900 pl-3 pr-3 pt-2 pb-2 ${
+			className={`z-[1] flex min-h-full flex-col bg-zinc-900 pb-2 pl-3 pr-3 pt-2 ${
 				overrideClassname && show ? '' : 'max-sm:hidden'
 			} ${className} transition-all ${show ? 'w-[280px] ' + overrideClassname : 'w-[64px]'}`}
 		>
@@ -150,7 +150,7 @@ export default function Sidebar({ user, className, overrideClassname, onHide, sh
 								}`}
 							>
 								<h1
-									className={`mt-[-3px] ml-[-10px] items-center text-xl font-black text-slate-100 hover:opacity-80 ${
+									className={`ml-[-10px] mt-[-3px] items-center text-xl font-black text-slate-100 hover:opacity-80 ${
 										show ? 'flex' : 'hidden'
 									}`}
 								>
@@ -176,7 +176,7 @@ export default function Sidebar({ user, className, overrideClassname, onHide, sh
 							)}
 						</button>
 					</div>
-					<div className="mt-2 mb-2 flex w-full flex-col items-center border-t border-zinc-800"></div>
+					<div className="mb-2 mt-2 flex w-full flex-col items-center border-t border-zinc-800"></div>
 					{links.map((linkItem) => (
 						<span key={linkItem.name} onClick={onHide}>
 							<Tooltip.Root>

@@ -96,7 +96,7 @@ export default function AddIncome({ show, selected, onLookup, onHide, onSubmit, 
 							</span>
 							<div className="flex items-center justify-between">
 								<input
-									className="mt-2 mr-4 block h-10 w-full appearance-none rounded-md bg-white px-3 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
+									className="mr-4 mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 									type="number"
 									placeholder="10"
 									required
@@ -111,7 +111,7 @@ export default function AddIncome({ show, selected, onLookup, onHide, onSubmit, 
 							<span className="block text-sm font-medium text-zinc-800">Received Date</span>
 							<div className="flex items-center justify-between">
 								<input
-									className="mt-2 mr-4 block h-10 w-full appearance-none rounded-md bg-white p-3 text-sm leading-tight text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2  focus:ring-gray-900 md:w-full "
+									className="mr-4 mt-2 block h-10 w-full appearance-none rounded-md bg-white p-3 text-sm leading-tight text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2  focus:ring-gray-900 md:w-full "
 									type="date"
 									required
 									max={todayDate}
@@ -127,7 +127,7 @@ export default function AddIncome({ show, selected, onLookup, onHide, onSubmit, 
 							<span className="block text-sm font-medium text-zinc-800">Category</span>
 							<select
 								name="category"
-								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white py-2 px-3 pr-8 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
+								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 py-2 pr-8 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 								onChange={(event) => {
 									setState({ ...state, category: event.target.value });
 								}}

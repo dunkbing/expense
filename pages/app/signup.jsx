@@ -17,7 +17,8 @@ const initialState = { loading: false, email: '', error: '', success: false };
 
 export default function Signup() {
 	const [state, setState] = useState(initialState);
-	const inputElement = useRef(null);
+	const emailInputElement = useRef(null);
+	const passwordInputElement = useRef(null);
 	const user = useUser();
 
 	const isProduction = process.env.NEXT_PUBLIC_VERCEL_ENV === 'production';
@@ -29,7 +30,7 @@ export default function Signup() {
 	}, [user]);
 
 	useEffect(() => {
-		inputElement.current?.focus();
+		emailInputElement.current?.focus();
 	}, []);
 
 	const handleSignup = async () => {
@@ -38,7 +39,7 @@ export default function Signup() {
 		try {
 			const res = await fetch('/api/auth/signup', {
 				method: 'POST',
-				body: JSON.stringify({ email: state.email }),
+				body: JSON.stringify({ email: state.email, password: state.password }),
 				headers: { 'Content-Type': 'application/json' },
 			});
 
@@ -88,7 +89,7 @@ export default function Signup() {
 							<span className="mt-2 font-black">Expense.fyi</span>
 						</h1>
 					</Link>
-					<p className="mt-3 mb-6 text-center text-sm font-medium text-zinc-600">
+					<p className="mb-6 mt-3 text-center text-sm font-medium text-zinc-600">
 						Get started for free. No credit card required.
 					</p>
 					<form
@@ -110,12 +111,27 @@ export default function Signup() {
 								onChange={(event) => {
 									setState({ ...state, email: event.target.value });
 								}}
-								ref={inputElement}
+								ref={emailInputElement}
+							/>
+						</label>
+						<label className="mb-1 block">
+							<span className="block text-sm font-semibold leading-6 text-zinc-800">Password</span>
+							<input
+								autoFocus
+								className="mt-2 block h-11 w-full appearance-none rounded-md bg-white px-3 text-sm text-black shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
+								type="password"
+								placeholder="Password"
+								required
+								value={state.password}
+								onChange={(event) => {
+									setState({ ...state, password: event.target.value });
+								}}
+								ref={passwordInputElement}
 							/>
 						</label>
 						<button
 							type="submit"
-							className="flex h-[44px] items-center justify-center rounded-lg bg-zinc-900 py-2.5 px-4 font-medium text-white hover:bg-zinc-700"
+							className="flex h-[44px] items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 font-medium text-white hover:bg-zinc-700"
 							disabled={state.loading}
 						>
 							{state.loading ? (
@@ -123,7 +139,7 @@ export default function Signup() {
 									<Loader />
 								</>
 							) : (
-								'Send magic link'
+								'Sign up'
 							)}
 						</button>
 
