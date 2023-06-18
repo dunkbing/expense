@@ -1,5 +1,7 @@
 import { useCallback, useState } from 'react';
 
+import { Analytics } from '@vercel/analytics/react';
+
 import MenuIcon from 'components/Menu/MenuIcon';
 import Sidebar from 'components/Menu/Sidebar';
 
@@ -29,6 +31,7 @@ export default function Layout({ className, children, user }) {
 				<MenuIcon onShow={() => onToggle(true)} />
 				{children}
 			</div>
+			<Analytics />
 		</main>
 	);
 }
