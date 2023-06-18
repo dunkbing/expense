@@ -1,4 +1,4 @@
-<a href="https://expense.fyi">
+<a href="https://quanlychitieu.fun">
 <p align="center"><img alt="Expense.fyi – An open source expense tracker application to track your incomes, investments, subscriptions, and expenses at ease." width="100" height="100" src="./public/static/icons/logo.svg"></p>
   <h1 align="center">Expense.fyi</h1>
 </a>
@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/gokulkrishh/expense.fyi/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/gokulkrishh/expense.fyi?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
+  <a href="https://github.com/gokulkrishh/quanlychitieu.fun/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/gokulkrishh/quanlychitieu.fun?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
   </a>
 </p>
 
@@ -46,19 +46,19 @@ Expense.fyi is an open-source application to effortlessly track and manage your 
 | Path      | Production             | Local                     |
 | --------- | ---------------------- | ------------------------- |
 | Home      | /                      | /                         |
-| Signup    | app.expense.fyi/signup | app.localhost:3000/signup |
-| Signin    | app.expense.fyi/signin | app.localhost:3000/signin |
-| Dashboard | app.expense.fyi        | app.localhost:3000        |
+| Signup    | app.quanlychitieu.fun/signup | app.localhost:3000/signup |
+| Signin    | app.quanlychitieu.fun/signin | app.localhost:3000/signin |
+| Dashboard | app.quanlychitieu.fun        | app.localhost:3000        |
 
 ## Contributions
 
 Here's how you can contribute:
 
-- [Open an issue](https://github.com/gokulkrishh/expense.fyi/issues) if you believe you've encountered a bug.
-- Make a [pull request](https://github.com/gokulkrishh/expense.fyi/pull) to add new features/make quality-of-life improvements/fix bugs.
+- [Open an issue](https://github.com/gokulkrishh/quanlychitieu.fun/issues) if you believe you've encountered a bug.
+- Make a [pull request](https://github.com/gokulkrishh/quanlychitieu.fun/pull) to add new features/make quality-of-life improvements/fix bugs.
 
-<a href="https://github.com/gokulkrishh/expense.fyi/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=gokulkrishh/expense.fyi" alt="contributors" />
+<a href="https://github.com/gokulkrishh/quanlychitieu.fun/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=gokulkrishh/quanlychitieu.fun" alt="contributors" />
 </a>
 
 ## Author
@@ -67,4 +67,4 @@ Here's how you can contribute:
 
 ## License
 
-Expense.fyi is an open source under the GNU Affero General Public License Version 3 (AGPLv3) or any later version. You can [find it here](https://github.com/gokulkrishh/expense.fyi/blob/main/LICENSE).
+Expense.fyi is an open source under the GNU Affero General Public License Version 3 (AGPLv3) or any later version. You can [find it here](https://github.com/gokulkrishh/quanlychitieu.fun/blob/main/LICENSE).

@@ -4,5 +4,5 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://expense.fyi/sitemap.xml
-Sitemap: http://expense.fyi/sitemap.xml
+Sitemap: https://quanlychitieu.fun/sitemap.xml
+Sitemap: http://quanlychitieu.fun/sitemap.xml

@@ -9,7 +9,7 @@ export async function middleware(req) {
 	const res = NextResponse.next();
 	const url = req.nextUrl;
 
-	// Get hostname of request (e.g. app.expense.fyi, app.localhost:3000)
+	// Get hostname of request (e.g. app.quanlychitieu.fun, app.localhost:3000)
 	const hostname = req.headers.get('host') || siteUrls.app;
 
 	// Get the pathname of the request (e.g. /, /home)

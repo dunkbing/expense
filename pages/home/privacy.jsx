@@ -164,8 +164,8 @@ export default function Privacy() {
 					<h2 className="mb-3 mt-2 text-2xl font-extrabold leading-6">Contact Us</h2>
 					<p className="mt-2">
 						If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at{' '}
-						<a className="border-b-[1px] border-black pb-[1px]" href="mailto:hello@expense.fyi.">
-							hello@expense.fyi.
+						<a className="border-b-[1px] border-black pb-[1px]" href="mailto:hello@quanlychitieu.fun.">
+							hello@quanlychitieu.fun.
 						</a>
 					</p>
 				</div>

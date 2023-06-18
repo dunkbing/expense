@@ -2,7 +2,7 @@ import { Hr } from '@react-email/hr';
 import { Link } from '@react-email/link';
 import { Text } from '@react-email/text';
 
-const baseUrl = 'https://expense.fyi';
+const baseUrl = 'https://quanlychitieu.fun';
 
 export default function Footer() {
 	return (

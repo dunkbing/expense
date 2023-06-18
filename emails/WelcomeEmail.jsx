@@ -13,9 +13,9 @@ import ButtonLink from './ButtonLink';
 import Footer from './Footer';
 import Footnote from './Footnote';
 
-const baseUrl = 'https://expense.fyi';
-const appUrl = 'https://app.expense.fyi';
-const githubUrl = 'https://github.com/gokulkrishh/expense.fyi';
+const baseUrl = 'https://quanlychitieu.fun';
+const appUrl = 'https://app.quanlychitieu.fun';
+const githubUrl = 'https://github.com/gokulkrishh/quanlychitieu.fun';
 const twitterUrl = 'https://twitter.com/gokul_i';
 const demoVideoUrl = `https://www.youtube.com/watch?v=faueh3BZXCo`;
 

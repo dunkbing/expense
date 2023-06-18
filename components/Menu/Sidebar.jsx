@@ -109,7 +109,7 @@ const links = [
 ];
 
 const preferencesLinks = [
-	{ link: 'mailto:support@expense.fyi', activePath: '', name: 'Support', Icon: SupportIcon },
+	{ link: 'mailto:support@quanlychitieu.fun', activePath: '', name: 'Support', Icon: SupportIcon },
 	{ link: '/settings', activePath: '/app/settings', name: 'Settings', Icon: SettingsIcon },
 ];
 

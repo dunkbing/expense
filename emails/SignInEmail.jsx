@@ -13,7 +13,7 @@ import ButtonLink from './ButtonLink';
 import Footer from './Footer';
 import Footnote from './Footnote';
 
-const baseUrl = 'https://expense.fyi';
+const baseUrl = 'https://quanlychitieu.fun';
 
 export default function SignInEmail({ magicLink = '', btnText = 'Sign in' }) {
 	return (

@@ -10,7 +10,7 @@ import { Text } from '@react-email/text';
 
 import Footer from './Footer';
 
-const baseUrl = 'https://expense.fyi';
+const baseUrl = 'https://quanlychitieu.fun';
 
 export default function FeedbackEmail({ message = '', email = '' }) {
 	return (

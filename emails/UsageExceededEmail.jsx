@@ -12,8 +12,8 @@ import { Text } from '@react-email/text';
 import Footer from './Footer';
 import Footnote from './Footnote';
 
-const baseUrl = 'https://expense.fyi';
-const settingUrl = 'https://app.expense.fyi/settings';
+const baseUrl = 'https://quanlychitieu.fun';
+const settingUrl = 'https://app.quanlychitieu.fun/settings';
 
 export default function UsageExceededEmail({ plan = 'Basic Plan', usage = 0, maxUsageLimit = 100, isExpired = false }) {
 	return (

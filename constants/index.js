@@ -97,17 +97,17 @@ export const subscriptionPayment = {
 };
 
 export const siteUrls = {
-	app: 'https://app.expense.fyi',
-	home: 'expense.fyi',
-	signup: 'https://app.expense.fyi/signup',
-	signin: 'https://app.expense.fyi/signin',
+	app: 'https://app.quanlychitieu.fun',
+	home: 'quanlychitieu.fun',
+	signup: 'https://app.quanlychitieu.fun/signup',
+	signin: 'https://app.quanlychitieu.fun/signin',
 	local: 'localhost:3000',
 	appLocal: 'http://app.localhost:3000',
 	localSignup: `http://app.localhost:3000/signup`,
 	localSignin: `http://app.localhost:3000/signin`,
-	subdomain: '.expense.fyi',
+	subdomain: '.quanlychitieu.fun',
 	subdomainLocal: '.localhost:3000',
-	githubUrl: 'https://github.com/gokulkrishh/expense.fyi',
+	githubUrl: 'https://github.com/gokulkrishh/quanlychitieu.fun',
 	twitterUrl: 'https://twitter.com/gokul_i',
 };
 
@@ -146,7 +146,7 @@ export const logo = `https://${siteUrls.home}/static/icons/logo.png`;
 export const basicPlanUsageLimit = 100;
 export const premiumPlanUsageLimit = 2500;
 
-export const sentFromEmailId = 'Gokul from Expense.fyi <hello@expense.fyi>';
+export const sentFromEmailId = 'Gokul from Expense.fyi <hello@quanlychitieu.fun>';
 
 export const shortcuts = {
 	sidebar: {
