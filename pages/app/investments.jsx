@@ -29,9 +29,10 @@ export default function Investments({ user }) {
 	const [show, setShow] = useState(false);
 	const [selected, setSelected] = useState({});
 	const [filterKey, setFilterKey] = useState(filterMap.thismonth);
+	const [categories, setCategories] = useState([]);
 	useHotkeys(addShortcutKey, () => !isLoading && setShow(true));
 
-	const { data = [], mutate, isLoading } = useSWR(getApiUrl(filterKey, 'investments'));
+	const { data = [], mutate, isLoading } = useSWR(getApiUrl(filterKey, 'investments', categories));
 
 	const onHide = () => setShow(false);
 	const onEdit = (selected) => {
@@ -148,6 +149,8 @@ export default function Investments({ user }) {
 					onFilterChange={(filterKey) => {
 						setFilterKey(filterKey);
 					}}
+					onCategoryFilterChange={setCategories}
+					categories={categories}
 					filterKey={filterKey}
 					isLoading={isLoading}
 					data={data}
