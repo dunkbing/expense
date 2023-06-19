@@ -83,7 +83,7 @@ const Feedback = ({ className }) => {
 							onClick={() => setState({ ...state, show: !state.show })}
 						>
 							<ChatBubbleBottomCenterTextIcon className="relative top-[1px] h-4 w-4" />{' '}
-							<span className="ml-2 hidden sm:block">Feedback</span>
+							<span className="ml-2 hidden sm:block">ýkiến</span>
 						</button>
 					</Tooltip.Trigger>
 					<Tooltip.Content hideWhenDetached className="TooltipContent">
@@ -119,7 +119,7 @@ const Feedback = ({ className }) => {
 								>
 									<textarea
 										className="mb-2 mt-2 block h-[100px] w-full appearance-none rounded-md bg-white px-3 py-2 text-sm text-zinc-800 ring-2 ring-zinc-400 transition-all placeholder:text-zinc-400 focus:outline-none focus:ring-gray-900"
-										placeholder="Share your feedback..."
+										placeholder="Chia sẻ ý kiến của bạn..."
 										onChange={(event) => setState({ ...state, message: event.target.value })}
 										value={state.message}
 										style={{ resize: 'none' }}
@@ -140,7 +140,7 @@ const Feedback = ({ className }) => {
 													<Loader />
 												</div>
 											) : (
-												'Send'
+												'Gửi'
 											)}
 										</button>
 									</div>

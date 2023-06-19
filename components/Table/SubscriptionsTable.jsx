@@ -10,7 +10,7 @@ import { formatCurrency, formatDate, isItToday } from 'utils/formatter';
 import { dateFormatStr } from 'constants/index';
 
 const tdClassNames = 'relative p-4 pl-8 text-sm text-zinc-600 whitespace-nowrap';
-const thList = ['Name', 'Price', 'Renewal Date ↓', 'Start/Cancel Date', 'Notes', 'Status', 'Actions'];
+const thList = ['Tên', 'Số tiền', 'Ngày làm mới ↓', 'Ngày huỷ/bắt đầu', 'Ghi chú', 'Trạng thái', 'Hành động'];
 
 export default function SubscriptionTable({ isLoading, data = [], onEdit, onDelete, onActive, user }) {
 	const { currency, locale, isPremiumPlan, isPremiumPlanEnded } = user;
@@ -19,7 +19,7 @@ export default function SubscriptionTable({ isLoading, data = [], onEdit, onDele
 		return (
 			<>
 				<div className="flex flex-col items-center justify-center">
-					<p className="mt-2 font-medium text-black sm:mt-10">You don{"'"}t have any subcriptions yet!</p>
+					<p className="mt-2 font-medium text-black sm:mt-10">Bạn chưa có khoản trả góp nào</p>
 					<Image
 						className="mt-2"
 						src="/static/illustrations/keynote-presentation.svg"
@@ -33,12 +33,7 @@ export default function SubscriptionTable({ isLoading, data = [], onEdit, onDele
 	}
 
 	return (
-		<Table
-			title="Subscriptions"
-			thList={thList}
-			isLoading={isLoading}
-			isPremiumPlan={isPremiumPlan && !isPremiumPlanEnded}
-		>
+		<Table title="Trả góp" thList={thList} isLoading={isLoading} isPremiumPlan={isPremiumPlan && !isPremiumPlanEnded}>
 			{data
 				.sort((a, b) => (new Date(a.renewal_date) > new Date(b.renewal_date) ? 1 : -1))
 				.sort((a, b) => (a.active > b.active ? -1 : 1))

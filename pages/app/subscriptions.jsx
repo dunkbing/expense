@@ -7,6 +7,7 @@ import useSWR from 'swr';
 
 import enforceAuth from 'components/Auth/enforceAuth';
 import Card from 'components/Card';
+import Gap from 'components/Gap';
 import LoaderCard from 'components/Loader/LoaderCard';
 import AddButton from 'components/Modal/AddButton';
 import AddSubscription from 'components/Modal/AddSubscription';
@@ -120,30 +121,30 @@ export default function Subscriptions({ user }) {
 	return (
 		<>
 			<Head>
-				<title>Expense.fyi - Subscriptions</title>
+				<title>Quanlychitieu.fun - Trả góp</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 			</Head>
 
 			<div className="h-ful mb-20">
 				<div className="mb-2 flex justify-between">
-					<h1 className="mb-2 mr-3 text-2xl font-extrabold text-black max-sm:mb-4 max-sm:ml-[45px]">Subscriptions</h1>
+					<h1 className="mb-2 mr-3 text-2xl font-extrabold text-black max-sm:mb-4 max-sm:ml-[45px]">Trả góp</h1>
 				</div>
 
-				<h2 className="mb-4 text-black">Summary</h2>
+				<Gap.XS />
 				{isLoading ? (
 					<LoaderCard nums={4} />
 				) : (
 					<div className="mb-6 grid grid-cols-1 gap-6 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-						<Card title="Total Subscriptions" className="relative" data={data.length} />
+						<Card title="Các khoản trả góp" className="relative" data={data.length} />
 
 						<Card
-							title="Active - Cancelled"
+							title="Đang diễn ra - Đã huỷ"
 							className="relative"
 							data={`${data.filter((datum) => datum.active).length} - ${data.filter((datum) => !datum.active).length}`}
 						/>
 
 						<Card
-							title={`Total Active - Yearly`}
+							title={`Tổng trả góp - Hàng năm`}
 							className="relative"
 							data={formatCurrency(
 								yearlyData.reduce((acc, datum) => Number(datum.price) + acc, 0),
@@ -153,7 +154,7 @@ export default function Subscriptions({ user }) {
 						/>
 
 						<Card
-							title={`Total Active - Monthly`}
+							title={`Tổng trả góp - Hàng tháng`}
 							className="relative"
 							data={formatCurrency(
 								monthlyData.reduce((acc, datum) => Number(datum.price) + acc, 0),

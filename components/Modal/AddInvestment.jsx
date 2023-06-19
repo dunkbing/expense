@@ -46,7 +46,7 @@ export default function AddInvestment({ show, lookup, selected, onHide, onSubmit
 	};
 
 	return (
-		<Modal inputRef={inputRef} show={show} title={`${selected.id ? 'Edit' : 'Add'} Investment`} onHide={onHide}>
+		<Modal inputRef={inputRef} show={show} title={`${selected.id ? 'Sửa' : 'Thêm'} Khoản Đầu Tư`} onHide={onHide}>
 			<div className="sm:flex sm:items-start">
 				<form
 					className="md:[420px] grid w-full grid-cols-1 items-center gap-4"
@@ -57,11 +57,11 @@ export default function AddInvestment({ show, lookup, selected, onHide, onSubmit
 					}}
 				>
 					<label className="block">
-						<span className="block text-sm font-medium text-zinc-600">Name</span>
+						<span className="block text-sm font-medium text-zinc-600">Tên</span>
 						<input
 							className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 text-sm text-zinc-600 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 							type="text"
-							placeholder="Company or Symbol Name"
+							placeholder="Công ty hoặc mã cổ phiếu"
 							required
 							maxLength="30"
 							autoFocus
@@ -90,7 +90,7 @@ export default function AddInvestment({ show, lookup, selected, onHide, onSubmit
 					<div className="grid grid-cols-[60%,40%]">
 						<label className="mr-4 block">
 							<span className="block text-sm font-medium text-zinc-600">
-								Single Stock Price
+								Giá cổ phiếu
 								<span className="ml-2 font-mono text-xs">({getCurrencySymbol(currency, locale)})</span>
 							</span>
 							<input
@@ -105,7 +105,7 @@ export default function AddInvestment({ show, lookup, selected, onHide, onSubmit
 							/>
 						</label>
 						<label className="block">
-							<span className="block text-sm font-medium text-zinc-600">Units</span>
+							<span className="block text-sm font-medium text-zinc-600">Đơn vị</span>
 							<input
 								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 text-sm text-zinc-600 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 								type="number"
@@ -120,7 +120,7 @@ export default function AddInvestment({ show, lookup, selected, onHide, onSubmit
 					</div>
 					<div className="grid grid-cols-[60%,40%]">
 						<label className="block">
-							<span className="block text-sm font-medium text-zinc-600">Bought Date</span>
+							<span className="block text-sm font-medium text-zinc-600">Ngày mua</span>
 							<div className="flex items-center justify-between">
 								<input
 									className="mr-4 mt-2 block h-10 w-full appearance-none rounded-md bg-white p-3 text-sm leading-tight text-zinc-600 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2  focus:ring-gray-900 "
@@ -135,7 +135,7 @@ export default function AddInvestment({ show, lookup, selected, onHide, onSubmit
 							</div>
 						</label>
 						<label className="block">
-							<span className="block text-sm font-medium text-zinc-600">Category</span>
+							<span className="block text-sm font-medium text-zinc-600">Phân loại</span>
 							<select
 								name="category"
 								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 py-2 text-sm text-zinc-600 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
@@ -157,7 +157,7 @@ export default function AddInvestment({ show, lookup, selected, onHide, onSubmit
 					</div>
 					<label className="block">
 						<span className="block text-sm font-medium text-zinc-600">
-							Notes <span className="mb-6 text-center text-sm font-medium text-gray-400">(optional)</span>
+							Ghi chú <span className="mb-6 text-center text-sm font-medium text-gray-400">(không bắt buộc)</span>
 						</span>
 						<textarea
 							className="mt-2 block h-20 w-full appearance-none rounded-md bg-white px-3 py-2 text-sm text-zinc-600 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
@@ -168,7 +168,7 @@ export default function AddInvestment({ show, lookup, selected, onHide, onSubmit
 						/>
 					</label>
 
-					<Button type="submit" loading={loading} text={state.id ? 'Update' : 'Submit'} />
+					<Button type="submit" loading={loading} text={state.id ? 'Sửa' : 'Thêm'} />
 				</form>
 			</div>
 		</Modal>

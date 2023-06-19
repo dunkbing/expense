@@ -64,16 +64,16 @@ export default function Home({ user }) {
 	return (
 		<>
 			<Head>
-				<title>Expense.fyi - Overview</title>
+				<title>Quanlychitieu.fun - Tổng quan</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 			</Head>
 
 			<div className="2xl:container h-full w-full">
 				<div className="mb-2 flex flex-col justify-between sm:flex-row ">
-					<h1 className="mb-2 mr-3 text-2xl font-extrabold text-black max-sm:mb-4 max-sm:ml-[45px]">Overview</h1>
+					<h1 className="mb-2 mr-3 text-2xl font-extrabold text-black max-sm:mb-4 max-sm:ml-[45px]">Tổng quan</h1>
 					<div className="flex items-center font-medium">
 						<div className="ranger-picker mr-2 flex w-[calc(100%-51px)] items-center sm:mr-4">
-							<span className="mr-2 hidden text-xs font-semibold uppercase sm:inline-block">Showing:</span>
+							<span className="mr-2 hidden text-xs font-semibold uppercase sm:inline-block">Đang hiển thị:</span>
 							<DateRangePicker
 								defaultValue={[
 									new Date(selectedDateObj.start),
@@ -110,12 +110,12 @@ export default function Home({ user }) {
 					isLoading={isLoading}
 				/>
 
-				<h2 className="mb-4 mt-8 text-black">Report</h2>
+				<h2 className="mb-4 mt-8 text-black">Báo cáo</h2>
 				<div className="mb-8 grid grid-cols-1 gap-8 font-semibold lg:grid-cols-2">
 					<div className="mr-4 flex min-h-full w-full flex-col">
 						<Card className="h-full">
-							<h3 className="text-md font-semibold text-black">Expenses</h3>
-							<p className="mt-1 pb-2 text-sm font-normal text-zinc-500">Amount spent for the selected date range.</p>
+							<h3 className="text-md font-semibold text-black">Chi tiêu</h3>
+							<p className="mt-1 pb-2 text-sm font-normal text-zinc-500">Số tiền chi tiêu cho phạm vi ngày đã chọn.</p>
 							{isExpensesLoading ? (
 								<LoaderChart className="h-[340px]" />
 							) : (
@@ -143,9 +143,9 @@ export default function Home({ user }) {
 
 					<div className="mb-8 flex min-h-full w-full flex-col md:mb-0 md:mt-0">
 						<Card className="h-full w-full">
-							<h3 className="text-md font-semibold text-black">Subscriptions</h3>
+							<h3 className="text-md font-semibold text-black">Trả góp</h3>
 							<p className="mt-1 pb-2 text-sm font-normal text-zinc-500">
-								Estimated spent amount for selected date range.
+								Số tiền chi tiêu ước tính cho phạm vi ngày đã chọn.
 							</p>
 							{isSubsLoading ? (
 								<LoaderChart className="h-[340px]" type="donut" />

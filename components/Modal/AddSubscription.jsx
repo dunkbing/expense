@@ -44,7 +44,7 @@ export default function AddSubscription({ show, selected, onHide, onSubmit, load
 	useEffect(() => setHasValidUrl(checkUrl(state.url)), [state.url]);
 
 	return (
-		<Modal inputRef={inputRef} show={show} title={`${selected.id ? 'Edit' : 'Add'} Subscription`} onHide={onHide}>
+		<Modal inputRef={inputRef} show={show} title={`${selected.id ? 'Sửa' : 'Thêm'} Khoản Trả Góp`} onHide={onHide}>
 			<div className="flex items-start">
 				<form
 					className="md:[420px] grid w-full grid-cols-1 items-center gap-4"
@@ -55,7 +55,7 @@ export default function AddSubscription({ show, selected, onHide, onSubmit, load
 					}}
 				>
 					<label className="block">
-						<span className="block text-sm font-medium text-zinc-600">Name</span>
+						<span className="block text-sm font-medium text-zinc-600">Nguồn</span>
 						<input
 							className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 text-sm text-zinc-600 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 							type="text"
@@ -99,7 +99,7 @@ export default function AddSubscription({ show, selected, onHide, onSubmit, load
 					<div className="grid grid-cols-[32%,38%,30%]">
 						<label className="mr-4 block">
 							<span className="block text-sm font-medium text-zinc-600">
-								Price
+								Số tiền
 								<span className="ml-2 font-mono text-xs">({getCurrencySymbol(currency, locale)})</span>
 							</span>
 							<div className="flex items-center justify-between">
@@ -116,7 +116,7 @@ export default function AddSubscription({ show, selected, onHide, onSubmit, load
 							</div>
 						</label>
 						<label className="mr-4 block">
-							<span className="block text-sm font-medium text-zinc-600">Start Date</span>
+							<span className="block text-sm font-medium text-zinc-600">Ngày bắt đầu</span>
 							<div className="flex items-center justify-between">
 								<input
 									className="mt-2 block h-10 w-full appearance-none rounded-md bg-white p-3 text-sm leading-tight text-zinc-600 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900 md:w-full"
@@ -131,7 +131,7 @@ export default function AddSubscription({ show, selected, onHide, onSubmit, load
 							</div>
 						</label>
 						<label className="block">
-							<span className="block text-sm font-medium text-zinc-600">Paying</span>
+							<span className="block text-sm font-medium text-zinc-600">Theo</span>
 							<select
 								name="paid"
 								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 py-2 text-sm text-zinc-600 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
@@ -151,7 +151,7 @@ export default function AddSubscription({ show, selected, onHide, onSubmit, load
 					</div>
 					<label className="block">
 						<span className="block text-sm font-medium text-zinc-600">
-							Notes <span className="mb-6 text-center text-sm font-medium text-gray-500">(optional)</span>
+							Ghi chú <span className="mb-6 text-center text-sm font-medium text-gray-500">(không bắt buộc)</span>
 						</span>
 						<textarea
 							className="mt-2 block h-20 w-full appearance-none rounded-md bg-white px-3 py-2 text-sm text-zinc-600 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
@@ -162,7 +162,7 @@ export default function AddSubscription({ show, selected, onHide, onSubmit, load
 						/>
 					</label>
 
-					<Button type="submit" loading={loading} text={state.id ? 'Update' : 'Submit'} />
+					<Button type="submit" loading={loading} text={state.id ? 'Sửa' : 'Thêm'} />
 				</form>
 			</div>
 		</Modal>

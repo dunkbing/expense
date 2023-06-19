@@ -58,7 +58,7 @@ export default function AddExpense({ show, selected, lookup, onHide, onSubmit, l
 	};
 
 	return (
-		<Modal inputRef={inputRef} show={show} title={`${selected.id ? 'Edit' : 'Add'} Expense`} onHide={onHide}>
+		<Modal inputRef={inputRef} show={show} title={`${selected.id ? 'Sửa' : 'Thêm'} Khoản Chi`} onHide={onHide}>
 			<div className="sm:flex sm:items-start">
 				<form
 					className="md:[420px] grid w-full grid-cols-1 items-center gap-4"
@@ -69,11 +69,11 @@ export default function AddExpense({ show, selected, lookup, onHide, onSubmit, l
 					}}
 				>
 					<label className="block">
-						<span className="block text-sm font-medium text-zinc-800">Name</span>
+						<span className="block text-sm font-medium text-zinc-800">Tên</span>
 						<input
 							className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 							type="text"
-							placeholder="Swiggy - Biriyani"
+							placeholder="mua sắm"
 							maxLength="30"
 							required
 							ref={inputRef}
@@ -103,7 +103,7 @@ export default function AddExpense({ show, selected, lookup, onHide, onSubmit, l
 					<div className="grid grid-cols-[50%,50%]">
 						<label className="block">
 							<span className="block text-sm font-medium text-zinc-800">
-								Price
+								Số tiền
 								<span className="ml-2 font-mono text-xs">({getCurrencySymbol(currency, locale)})</span>
 							</span>
 							<div className="flex items-center justify-between">
@@ -120,7 +120,7 @@ export default function AddExpense({ show, selected, lookup, onHide, onSubmit, l
 							</div>
 						</label>
 						<label className="block">
-							<span className="block text-sm font-medium text-zinc-800">Spent Date</span>
+							<span className="block text-sm font-medium text-zinc-800">Ngày</span>
 							<div className="flex items-center justify-between">
 								<input
 									className="mt-2 block h-10 w-full appearance-none rounded-md bg-white p-3 text-sm leading-tight text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2  focus:ring-gray-900"
@@ -139,7 +139,7 @@ export default function AddExpense({ show, selected, lookup, onHide, onSubmit, l
 					<div className="grid grid-cols-[50%,50%]">
 						<label className="mr-4 block">
 							<span className="block text-sm font-medium text-zinc-800">
-								Category <span className="ml-1">{expensesCategory[state.category]?.emoji}</span>
+								Phân loại <span className="ml-1">{expensesCategory[state.category]?.emoji}</span>
 							</span>
 							<select
 								name="category"
@@ -169,7 +169,7 @@ export default function AddExpense({ show, selected, lookup, onHide, onSubmit, l
 							</select>
 						</label>
 						<label>
-							<span className="block text-sm font-medium text-zinc-800">Paid</span>
+							<span className="block text-sm font-medium text-zinc-800">Hình thức</span>
 							<select
 								name="paid via"
 								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 py-2 pr-8 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
@@ -191,7 +191,7 @@ export default function AddExpense({ show, selected, lookup, onHide, onSubmit, l
 					</div>
 					<label className="block">
 						<span className="block text-sm font-medium text-zinc-800">
-							Notes <span className="mb-6 text-center text-sm font-medium text-gray-400">(optional)</span>
+							Ghi chú <span className="mb-6 text-center text-sm font-medium text-gray-400">(không bắt buộc)</span>
 						</span>
 						<textarea
 							className="mt-2 block h-20 w-full appearance-none rounded-md bg-white px-3 py-2 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
@@ -202,7 +202,7 @@ export default function AddExpense({ show, selected, lookup, onHide, onSubmit, l
 						/>
 					</label>
 
-					<Button type="submit" loading={loading} text={state.id ? 'Update' : 'Submit'} />
+					<Button type="submit" loading={loading} text={state.id ? 'Sửa' : 'Thêm'} />
 				</form>
 			</div>
 		</Modal>

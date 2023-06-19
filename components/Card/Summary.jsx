@@ -1,6 +1,7 @@
 import { BanknotesIcon, BriefcaseIcon, CreditCardIcon, PlayIcon, ScaleIcon } from '@heroicons/react/24/outline';
 import { Icon } from '@tremor/react';
 
+import Gap from 'components/Gap';
 import LoaderCard from 'components/Loader/LoaderCard';
 
 import { formatCurrency } from 'utils/formatter';
@@ -37,13 +38,13 @@ export default function Summary({
 
 	return (
 		<>
-			<h2 className="mb-4 text-black">Summary</h2>
+			<Gap.XS />
 			{isLoading ? (
 				<LoaderCard nums={5} />
 			) : (
-				<div className="grid grid-cols-1 gap-6 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+				<div className="mt-2 grid grid-cols-1 gap-6 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
 					<Card
-						title="Total Income"
+						title="Tổng thu nhập"
 						className="relative "
 						data={formatCurrency(totalIncomeAmount, currency, locale)}
 						icon={
@@ -54,7 +55,7 @@ export default function Summary({
 					/>
 
 					<Card
-						title="Available Balance"
+						title="Số dư hiện tại"
 						className="relative"
 						data={formatCurrency(totalBalanceAmount, currency, locale)}
 						icon={
@@ -65,24 +66,7 @@ export default function Summary({
 					/>
 
 					<Card
-						title="Total Spent"
-						className="relative"
-						data={formatCurrency(totalSpent, currency, locale)}
-						icon={
-							<span className="absolute right-2 top-2">
-								<Icon
-									icon={BanknotesIcon}
-									tooltip="Total of Expenses, Investments & Subscriptions"
-									variant="light"
-									size="xs"
-									color="orange"
-								/>
-							</span>
-						}
-					/>
-
-					<Card
-						title="Total expenses"
+						title="Tổng chi tiêu"
 						className="relative"
 						data={formatCurrency(totalExpenseCost, currency, locale)}
 						icon={
@@ -93,7 +77,24 @@ export default function Summary({
 					/>
 
 					<Card
-						title="Total Subscriptions"
+						title="Tổng đầu tư"
+						className="relative"
+						data={formatCurrency(totalInvestmentsAmount, currency, locale)}
+						icon={
+							<span className="absolute right-2 top-2">
+								<Icon
+									icon={BanknotesIcon}
+									// tooltip="Total of Expenses, Investments & Subscriptions"
+									variant="light"
+									size="xs"
+									color="orange"
+								/>
+							</span>
+						}
+					/>
+
+					<Card
+						title="Tổng trả góp"
 						className="relative"
 						data={formatCurrency(totalSubscriptionsCost, currency, locale)}
 						icon={

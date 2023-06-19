@@ -56,7 +56,7 @@ export default function Signup() {
 	return (
 		<>
 			<Head>
-				<title>Sign up for Expense.fyi</title>
+				<title>Đăng ký tài khoản Quanlychitieu.fun</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 			</Head>
 			<main
@@ -85,13 +85,11 @@ export default function Signup() {
 				<div className="absolute z-50 flex w-[380px] flex-1 flex-col justify-center p-6 sm:w-[468px] sm:p-10">
 					<Link href={homeUrl}>
 						<h1 className="flex flex-col items-center text-3xl text-black">
-							<Image src={SvgLogoBlack} width={50} height={50} alt="Expense.fyi" />
-							<span className="mt-2 font-black">Expense.fyi</span>
+							<Image src={SvgLogoBlack} width={50} height={50} alt="Quanlychitieu.fun" />
+							<span className="mt-2 font-black">Quanlychitieu.fun</span>
 						</h1>
 					</Link>
-					<p className="mb-6 mt-3 text-center text-sm font-medium text-zinc-600">
-						Get started for free. No credit card required.
-					</p>
+					<p className="mb-6 mt-3 text-center text-sm font-medium text-zinc-600">Đăng ký sử dụng miễn phí.</p>
 					<form
 						className="grid w-full grid-cols-1 items-center gap-4"
 						onSubmit={(event) => {
@@ -100,12 +98,12 @@ export default function Signup() {
 						}}
 					>
 						<label className="mb-1 block">
-							<span className="block text-sm font-semibold leading-6 text-zinc-800">Email Address</span>
+							<span className="block text-sm font-semibold leading-6 text-zinc-800">Địa chỉ Email</span>
 							<input
 								autoFocus
 								className="mt-2 block h-11 w-full appearance-none rounded-md bg-white px-3 text-sm text-black shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 								type="email"
-								placeholder="tim@apple.com"
+								placeholder="nguyenvana@gmail.com"
 								required
 								value={state.email}
 								onChange={(event) => {
@@ -115,12 +113,12 @@ export default function Signup() {
 							/>
 						</label>
 						<label className="mb-1 block">
-							<span className="block text-sm font-semibold leading-6 text-zinc-800">Password</span>
+							<span className="block text-sm font-semibold leading-6 text-zinc-800">Mật khẩu</span>
 							<input
 								autoFocus
 								className="mt-2 block h-11 w-full appearance-none rounded-md bg-white px-3 text-sm text-black shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 								type="password"
-								placeholder="Password"
+								placeholder="Mật khẩu"
 								required
 								value={state.password}
 								onChange={(event) => {
@@ -139,19 +137,18 @@ export default function Signup() {
 									<Loader />
 								</>
 							) : (
-								'Sign up'
+								'Đăng ký'
 							)}
 						</button>
 
 						<p className="text-center text-sm font-medium text-zinc-700">
-							Already registered?{' '}
+							Đã có tài khoản?{' '}
 							<Link
 								href={signInUrl}
 								className="border-b-[1px] border-zinc-700 pb-[1px] font-bold hover:border-zinc-500 hover:text-zinc-600"
 							>
-								Sign in
+								Đăng nhập ngay
 							</Link>{' '}
-							to your account.
 						</p>
 
 						<p
@@ -160,7 +157,7 @@ export default function Signup() {
 							}`}
 						>
 							{state.success && !state.error ? (
-								<span className="text-green-700">We just sent an email with magic link, check your inbox.</span>
+								<span className="text-green-700">Đã gửi email xác nhận, hãy kiểm tra hộp thư đến của bạn.</span>
 							) : null}
 
 							{!state.success && state.error ? <span className="text-red-500">{state.error}</span> : null}

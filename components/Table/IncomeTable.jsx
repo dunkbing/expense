@@ -11,7 +11,7 @@ import { incomeCategory } from 'constants/index';
 import NoDataTable from './NoDataTable';
 
 const tdClassNames = 'relative p-4 pl-8 text-zinc-600 text-sm';
-const thList = ['Name', 'Price', 'Received Date ↓', 'Category', 'Notes', 'Actions'];
+const thList = ['Nguồn', 'Giá trị', 'Ngày nhận ↓', 'Phân loại', 'Ghi chú', 'Hành động'];
 
 const categoryFilterData = Object.keys(incomeCategory)
 	.filter(Boolean)
@@ -34,7 +34,7 @@ export default function IncomeTable({
 		return (
 			<NoDataTable filterKey={filterKey} isPremiumPlan={isPremiumPlan} onFilterChange={onFilterChange}>
 				<div className="flex flex-col items-center justify-center ">
-					<p className="mt-2 font-medium text-black sm:mt-10">You don{"'"}t have any income yet.</p>
+					<p className="mt-2 font-medium text-black sm:mt-10">Bạn chưa có khoản thu nhập nào.</p>
 					<Image className="mt-2" src="/static/illustrations/rich.svg" width={300} height={300} alt="No income" />
 				</div>
 			</NoDataTable>
@@ -46,7 +46,7 @@ export default function IncomeTable({
 			showFilter
 			onFilterChange={onFilterChange}
 			filterKey={filterKey}
-			title="Income"
+			title="Thu nhập"
 			thList={thList}
 			isLoading={isLoading}
 			isPremiumPlan={isPremiumPlan && !isPremiumPlanEnded}

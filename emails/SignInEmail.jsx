@@ -19,7 +19,7 @@ export default function SignInEmail({ magicLink = '', btnText = 'Sign in' }) {
 	return (
 		<Html>
 			<Head />
-			<Preview>Sign in Link for Expense.fyi</Preview>
+			<Preview>Sign in Link for Quanlychitieu.fun</Preview>
 			<Section style={main}>
 				<Container style={container}>
 					<Section style={{ marginTop: '20px' }}>

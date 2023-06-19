@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 import { useEffect, useRef, useState } from 'react';
 
@@ -20,6 +21,7 @@ export default function SignIn() {
 	const emailInputElement = useRef(null);
 	const passwordInputElement = useRef(null);
 	const user = useUser();
+	const router = useRouter();
 
 	const isProduction = process.env.NEXT_PUBLIC_VERCEL_ENV === 'production';
 	const signUpUrl = isProduction ? siteUrls.signup : siteUrls.localSignup;
@@ -59,9 +61,9 @@ export default function SignIn() {
 					const error = await res.json();
 					throw new Error(error.message);
 				}
-				setState((prev) => ({ ...prev, success: true, loading: false, email: '', password: '' }));
+				router.replace('/');
 			} else {
-				throw new Error('No such account, Sign up instead.');
+				throw new Error('Tài khoản không tồn tại.');
 			}
 		} catch (error) {
 			setState((prev) => ({ ...prev, error: error.message, loading: false }));
@@ -71,7 +73,7 @@ export default function SignIn() {
 	return (
 		<>
 			<Head>
-				<title>Sign in to Expense.fyi</title>
+				<title>Sign in to Quanlychitieu.fun</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 			</Head>
 			<main
@@ -100,12 +102,12 @@ export default function SignIn() {
 				<div className="absolute z-50 flex w-[380px] flex-1 flex-col justify-center p-6 sm:w-[468px] sm:p-10">
 					<Link href={homeUrl}>
 						<h1 className="flex flex-col items-center text-3xl text-black">
-							<Image src={SvgLogoBlack} width={50} height={50} alt="Expense.fyi" />
-							<span className="mt-2 font-black">Expense.fyi</span>
+							<Image src={SvgLogoBlack} width={50} height={50} alt="Quanlychitieu.fun" />
+							<span className="mt-2 font-black">Quanlychitieu.fun</span>
 						</h1>
 					</Link>
 					<p className="mb-6 mt-3 text-center text-sm font-medium text-zinc-600">
-						Use your email address to securely sign in.
+						Sử dụng địa chỉ email của bạn để đăng nhập.
 					</p>
 					<form
 						className="grid w-full grid-cols-1 items-center gap-4 text-zinc-800"
@@ -115,12 +117,12 @@ export default function SignIn() {
 						}}
 					>
 						<label className="mb-1 block">
-							<span className="block text-sm font-semibold leading-6">Email Address</span>
+							<span className="block text-sm font-semibold leading-6">Địa chỉ Email</span>
 							<input
 								autoFocus
 								className="mt-2 block h-11 w-full appearance-none rounded-md bg-white px-3 text-sm text-black shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 								type="email"
-								placeholder="tim@apple.com"
+								placeholder="nguyenvana@gmail.com"
 								required
 								value={state.email}
 								onChange={(event) => {
@@ -130,12 +132,12 @@ export default function SignIn() {
 							/>
 						</label>
 						<label className="mb-1 block">
-							<span className="block text-sm font-semibold leading-6">Password</span>
+							<span className="block text-sm font-semibold leading-6">Mật khẩu</span>
 							<input
 								autoFocus
 								className="mt-2 block h-11 w-full appearance-none rounded-md bg-white px-3 text-sm text-black shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 								type="password"
-								placeholder="Password"
+								placeholder="Mật khẩu"
 								required
 								value={state.password}
 								onChange={(event) => {
@@ -159,14 +161,13 @@ export default function SignIn() {
 						</button>
 
 						<p className="text-center text-sm font-medium text-zinc-700">
-							Don{"'"}t have an account?{' '}
+							Chưa có tài khoản?{' '}
 							<Link
 								href={signUpUrl}
 								className="border-b-[1px] border-zinc-700 pb-[1px] font-bold hover:border-zinc-500 hover:text-zinc-600"
 							>
-								Sign up
+								Đăng ký
 							</Link>{' '}
-							for free.
 						</p>
 
 						<p

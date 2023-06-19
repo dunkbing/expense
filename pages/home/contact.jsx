@@ -14,7 +14,7 @@ export default function Contact() {
 	return (
 		<>
 			<Head>
-				<title>Expense.fyi – Contact Us</title>
+				<title>Quanlychitieu.fun – Contact Us</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 			</Head>
 
@@ -72,11 +72,11 @@ export default function Contact() {
 						}}
 					>
 						<div>
-							<label className="mb-2 block text-sm font-medium dark:text-gray-300">Email Address</label>
+							<label className="mb-2 block text-sm font-medium dark:text-gray-300">Địa chỉ Email</label>
 							<input
 								className="mt-1 block h-10 w-full appearance-none rounded-md bg-white px-3 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 								type="text"
-								placeholder="tim@apple.com"
+								placeholder="nguyenvana@gmail.com"
 								required
 								autoFocus
 								onChange={(event) => {

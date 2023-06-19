@@ -44,7 +44,7 @@ export default function enforceAuth(req, res) {
 			try {
 				// await resend.sendEmail({
 				// 	from: sentFromEmailId,
-				// 	subject: '✨ Welcome to Expense.fyi',
+				// 	subject: '✨ Welcome to Quanlychitieu.fun',
 				// 	to: session.user.email,
 				// 	react: <WelcomeEmail />,
 				// });

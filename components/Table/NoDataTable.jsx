@@ -30,7 +30,6 @@ export default function NoDataTable({
 				filterKey={filterKey}
 				categories={categories}
 			/>
-
 			{children}
 		</>
 	);

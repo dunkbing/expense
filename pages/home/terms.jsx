@@ -8,7 +8,7 @@ export default function Terms() {
 	return (
 		<>
 			<Head>
-				<title>Expense.fyi – Terms of use</title>
+				<title>Quanlychitieu.fun – Terms of use</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 			</Head>
 
@@ -60,8 +60,8 @@ export default function Terms() {
 					<p className="mt-2">
 						For that reason, we reserve the right to make changes to the app or to charge for its services, at any time
 						and for any reason. We will never charge you for the app or its services without making it very clear to you
-						exactly what you{'’'}re paying for. The Expense.fyi app stores and processes personal data that you have
-						provided to us, to provide my Service.{' '}
+						exactly what you{'’'}re paying for. The Quanlychitieu.fun app stores and processes personal data that you
+						have provided to us, to provide my Service.{' '}
 					</p>
 					<p className="mt-2">
 						{' '}
@@ -69,8 +69,8 @@ export default function Terms() {
 						you do not jailbreak or root your phone, which is the process of removing software restrictions and
 						limitations imposed by the official operating system of your device. It could make your phone vulnerable to
 						malware/viruses/malicious programs, compromise your phone{"'"}s security features and it could mean that the
-						Expense.fyi app won{"'"}t work properly or at all. You should be aware that there are certain things that
-						will not take responsibility for. Certain functions of the app will require the app to have an active
+						Quanlychitieu.fun app won{"'"}t work properly or at all. You should be aware that there are certain things
+						that will not take responsibility for. Certain functions of the app will require the app to have an active
 						internet connection.
 					</p>
 					<p className="mt-2">

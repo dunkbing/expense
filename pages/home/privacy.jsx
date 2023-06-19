@@ -8,7 +8,7 @@ export default function Privacy() {
 	return (
 		<>
 			<Head>
-				<title>Expense.fyi – Privacy Policy</title>
+				<title>Quanlychitieu.fun – Privacy Policy</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 			</Head>
 
@@ -47,8 +47,8 @@ export default function Privacy() {
 						Privacy Policy
 					</h1>
 					<p className="mt-2">
-						Author built the <b>Expense.fyi</b> web application as a <b>Freemium app</b>. This SERVICE is provided by at
-						no cost and is intended for use as is.
+						Author built the <b>Quanlychitieu.fun</b> web application as a <b>Freemium app</b>. This SERVICE is provided
+						by at no cost and is intended for use as is.
 					</p>
 					<p className="mt-2">
 						This page is used to inform visitors regarding my policies with the collection, use, and disclosure of
@@ -61,7 +61,7 @@ export default function Privacy() {
 					</p>
 					<p className="mt-2">
 						The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are
-						accessible at Expense.fyi unless otherwise defined in this Privacy Policy.
+						accessible at Quanlychitieu.fun unless otherwise defined in this Privacy Policy.
 					</p>
 				</div>
 				<div className="font-default relative m-4 mt-3 max-w-3xl pt-3 sm:m-4 lg:m-auto">

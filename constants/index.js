@@ -66,11 +66,11 @@ export const groupedExpensesCategory = {
 };
 
 export const incomeCategory = {
-	'': 'Select',
-	ads: 'Ads',
-	other: 'Other',
-	passiveincome: 'Passive Income',
-	salary: 'Salary',
+	'': 'Chọn',
+	ads: 'Quảng cáo',
+	other: 'Khác',
+	passiveincome: 'Thu nhập thụ động',
+	salary: 'Lương',
 	youtube: 'Youtube',
 };
 
@@ -139,14 +139,14 @@ export const tierNames = {
 	},
 };
 
-export const siteName = 'Expense.fyi';
+export const siteName = 'Quanlychitieu.fun';
 
 export const logo = `https://${siteUrls.home}/static/icons/logo.png`;
 
 export const basicPlanUsageLimit = 100;
 export const premiumPlanUsageLimit = 2500;
 
-export const sentFromEmailId = 'Gokul from Expense.fyi <hello@quanlychitieu.fun>';
+export const sentFromEmailId = 'Gokul from Quanlychitieu.fun <hello@quanlychitieu.fun>';
 
 export const shortcuts = {
 	sidebar: {

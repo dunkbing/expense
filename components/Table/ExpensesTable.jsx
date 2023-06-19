@@ -12,7 +12,7 @@ import Table from '.';
 import NoDataTable from './NoDataTable';
 
 const tdClassNames = 'relative p-4 pl-8 text-zinc-600 text-sm';
-const thList = ['Name', 'Price', 'Spent Date ↓', 'Category', 'Paid With', 'Notes', 'Actions'];
+const thList = ['Tên', 'Số tiền', 'Ngày ↓', 'Phân loại', 'Hình thức', 'Ghi chú', 'Hành động'];
 
 const categoryFilterData = Object.keys(expensesCategory)
 	.filter(Boolean)
@@ -43,7 +43,7 @@ export default function ExpensesTable({
 				categories={categories}
 			>
 				<div className="flex flex-col items-center justify-center ">
-					<p className="mt-2 font-medium text-black sm:mt-10">You don{"'"}t have any expense yet.</p>
+					<p className="mt-2 font-medium text-black sm:mt-10">Bạn chưa có khoản chi tiêu nào</p>
 					<Image
 						className="mt-2"
 						src="/static/illustrations/spending-money.svg"
@@ -61,7 +61,7 @@ export default function ExpensesTable({
 			showFilter
 			filterKey={filterKey}
 			onFilterChange={onFilterChange}
-			title="Expenses"
+			title="Chi tiêu"
 			thList={thList}
 			enableCategoryFilter
 			isLoading={isLoading}

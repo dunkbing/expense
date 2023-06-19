@@ -69,48 +69,48 @@ const links = [
 	{
 		link: '/',
 		activePath: '/app',
-		description: 'Overview page for all expenses',
-		name: 'Overview',
+		description: 'Trang tổng quan cho tất cả các chi tiêu',
+		name: 'Tổng quan',
 		Icon: OverviewIcon,
 		shortcutText: sidebar.overview.shortcut,
 	},
 	{
 		link: '/income',
 		activePath: '/app/income',
-		description: 'Add your income here',
-		name: 'Income',
+		description: 'Thêm thu nhập của bạn ở đây',
+		name: 'Thu nhập',
 		Icon: IncomeIcon,
 		shortcutText: sidebar.income.shortcut,
 	},
 	{
 		link: '/expenses',
-		description: 'Add all your expenses, including subscription amount.',
+		description: 'Tất cả các khoản chi tiêu, bao gồm trả góp',
 		activePath: '/app/expenses',
-		name: 'Expenses',
+		name: 'Chi tiêu',
 		Icon: ExpensesIcon,
 		shortcutText: sidebar.expenses.shortcut,
 	},
 	{
 		link: '/investments',
-		description: 'Add your investments here.',
+		description: 'Thêm các khoản đầu tư tại đây',
 		activePath: '/app/investments',
-		name: 'Investments',
+		name: 'Đầu tư',
 		Icon: InvestmentIcon,
 		shortcutText: sidebar.investments.shortcut,
 	},
 	{
 		link: '/subscriptions',
-		description: 'Track your upcoming renewals for subscriptions.',
+		description: 'Theo dõi các lần gia hạn sắp tới của bạn cho các khoản trả góp.',
 		activePath: '/app/subscriptions',
-		name: 'Subscriptions',
+		name: 'Trả góp',
 		Icon: SubscriptionsIcon,
 		shortcutText: sidebar.subscriptions.shortcut,
 	},
 ];
 
 const preferencesLinks = [
-	{ link: 'mailto:support@quanlychitieu.fun', activePath: '', name: 'Support', Icon: SupportIcon },
-	{ link: '/settings', activePath: '/app/settings', name: 'Settings', Icon: SettingsIcon },
+	{ link: 'mailto:support@quanlychitieu.fun', activePath: '', name: 'Hỗ trợ', Icon: SupportIcon },
+	{ link: '/settings', activePath: '/app/settings', name: 'Cài đặt', Icon: SettingsIcon },
 ];
 
 export default function Sidebar({ user, className, overrideClassname, onHide, show, onToggle }) {
@@ -227,11 +227,11 @@ export default function Sidebar({ user, className, overrideClassname, onHide, sh
 							show ? '' : 'justify-center'
 						}`}
 						onClick={signOut}
-						title={'Sign out'}
+						title={'Đăng xuất'}
 					>
 						<div className="flex items-center">
 							<LogoutIcon />
-							<span className={`ml-2 ${show ? 'visible' : 'hidden'}`}>Sign out</span>
+							<span className={`ml-2 ${show ? 'visible' : 'hidden'}`}>Đăng xuất</span>
 						</div>
 					</button>
 				</div>

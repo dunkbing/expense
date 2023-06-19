@@ -47,7 +47,7 @@ export default function AddIncome({ show, selected, onLookup, onHide, onSubmit, 
 	};
 
 	return (
-		<Modal inputRef={inputRef} show={show} title={`${selected.id ? 'Edit' : 'Add'} Income`} onHide={onHide}>
+		<Modal inputRef={inputRef} show={show} title={`${selected.id ? 'Sửa' : 'Thêm'} Thu nhập`} onHide={onHide}>
 			<div className="sm:flex sm:items-start">
 				<form
 					className="md:[420px] grid w-full grid-cols-1 items-center gap-4"
@@ -58,7 +58,7 @@ export default function AddIncome({ show, selected, onLookup, onHide, onSubmit, 
 					}}
 				>
 					<label className="block">
-						<span className="block text-sm font-medium text-zinc-800">Name</span>
+						<span className="block text-sm font-medium text-zinc-800">Nguồn</span>
 						<input
 							className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
 							type="text"
@@ -91,7 +91,7 @@ export default function AddIncome({ show, selected, onLookup, onHide, onSubmit, 
 					<div className="grid grid-cols-[32%,38%,30%]">
 						<label className="block">
 							<span className="block text-sm font-medium text-zinc-800">
-								Amount
+								Số tiền
 								<span className="ml-2 font-mono text-xs">({getCurrencySymbol(currency, locale)})</span>
 							</span>
 							<div className="flex items-center justify-between">
@@ -108,7 +108,7 @@ export default function AddIncome({ show, selected, onLookup, onHide, onSubmit, 
 							</div>
 						</label>
 						<label className="block">
-							<span className="block text-sm font-medium text-zinc-800">Received Date</span>
+							<span className="block text-sm font-medium text-zinc-800">Ngày Nhận</span>
 							<div className="flex items-center justify-between">
 								<input
 									className="mr-4 mt-2 block h-10 w-full appearance-none rounded-md bg-white p-3 text-sm leading-tight text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2  focus:ring-gray-900 md:w-full "
@@ -124,7 +124,7 @@ export default function AddIncome({ show, selected, onLookup, onHide, onSubmit, 
 							</div>
 						</label>
 						<label className="block">
-							<span className="block text-sm font-medium text-zinc-800">Category</span>
+							<span className="block text-sm font-medium text-zinc-800">Phân Loại</span>
 							<select
 								name="category"
 								className="mt-2 block h-10 w-full appearance-none rounded-md bg-white px-3 py-2 pr-8 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
@@ -146,7 +146,7 @@ export default function AddIncome({ show, selected, onLookup, onHide, onSubmit, 
 					</div>
 					<label className="block">
 						<span className="block text-sm font-medium text-zinc-800">
-							Notes <span className="mb-6 text-center text-sm font-medium text-gray-400">(optional)</span>
+							Ghi chú <span className="mb-6 text-center text-sm font-medium text-gray-400">(không bắt buộc)</span>
 						</span>
 						<textarea
 							className="mt-2 block h-20 w-full appearance-none rounded-md bg-white px-3 py-2 text-sm text-zinc-800 shadow-sm ring-1 ring-gray-300 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gray-900"
@@ -157,7 +157,7 @@ export default function AddIncome({ show, selected, onLookup, onHide, onSubmit, 
 						/>
 					</label>
 
-					<Button type="submit" loading={loading} text={state.id ? 'Update' : 'Submit'} />
+					<Button type="submit" loading={loading} text={state.id ? 'Sửa' : 'Thêm'} />
 				</form>
 			</div>
 		</Modal>

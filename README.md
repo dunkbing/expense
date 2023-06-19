@@ -1,10 +1,10 @@
 <a href="https://quanlychitieu.fun">
-<p align="center"><img alt="Expense.fyi – An open source expense tracker application to track your incomes, investments, subscriptions, and expenses at ease." width="100" height="100" src="./public/static/icons/logo.svg"></p>
-  <h1 align="center">Expense.fyi</h1>
+<p align="center"><img alt="Quanlychitieu.fun – An open source expense tracker application to track your incomes, investments, subscriptions, and expenses at ease." width="100" height="100" src="./public/static/icons/logo.svg"></p>
+  <h1 align="center">Quanlychitieu.fun</h1>
 </a>
 
 <p align="center">
-  Expense.fyi is an open-source expense tracker application to effortlessly track and manage your expenses.
+  Quanlychitieu.fun is an open-source expense tracker application to effortlessly track and manage your expenses.
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@
 
 ## Introduction
 
-Expense.fyi is an open-source application to effortlessly track and manage your incomes, expenses, investments, and subscriptions.
+Quanlychitieu.fun is an open-source application to effortlessly track and manage your incomes, expenses, investments, and subscriptions.
 
 ## Tech Stack
 
@@ -36,7 +36,7 @@ Expense.fyi is an open-source application to effortlessly track and manage your 
 
 ## Implementation
 
-- Expense.fyi is built using [NextJs](https://nextjs.org) from scratch.
+- Quanlychitieu.fun is built using [NextJs](https://nextjs.org) from scratch.
 - [Postgresql](https://www.postgresql.org/) is used as the ORM for easily communicating with the database for storing user, subscription data, etc. You can refer to the Prisma schema [here](/prisma/schema.prisma).
 - [Supabase](https://supabase.com/) is an open-source Firebase alternative, the data is stored in the Postgres database (private data are encrypted) and uses a magic link for authentication provided by supabase.
 - [LemonSqueezy](https://lemonsqueezy.com/) is used as the payment system. Its implementation is super simple.
@@ -67,4 +67,4 @@ Here's how you can contribute:
 
 ## License
 
-Expense.fyi is an open source under the GNU Affero General Public License Version 3 (AGPLv3) or any later version. You can [find it here](https://github.com/gokulkrishh/quanlychitieu.fun/blob/main/LICENSE).
+Quanlychitieu.fun is an open source under the GNU Affero General Public License Version 3 (AGPLv3) or any later version. You can [find it here](https://github.com/gokulkrishh/quanlychitieu.fun/blob/main/LICENSE).

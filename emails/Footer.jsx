@@ -11,9 +11,9 @@ export default function Footer() {
 			<Text style={footer}>
 				&copy; {new Date().getFullYear()}{' '}
 				<Link href={baseUrl} target="_blank" style={{ ...link, textDecoration: 'underline' }}>
-					Expense.fyi
+					Quanlychitieu.fun
 				</Link>{' '}
-				· Effortlessly track and manage your expenses.
+				· Dễ dàng theo dõi và quản lý các khoản chi phí..
 			</Text>
 		</>
 	);

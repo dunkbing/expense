@@ -8,6 +8,7 @@ import textFilter from 'text-filter';
 
 import enforceAuth from 'components/Auth/enforceAuth';
 import Card from 'components/Card';
+import Gap from 'components/Gap';
 import LoaderCard from 'components/Loader/LoaderCard';
 import AddButton from 'components/Modal/AddButton';
 import AddInvestment from 'components/Modal/AddInvestment';
@@ -107,23 +108,23 @@ export default function Investments({ user }) {
 	return (
 		<>
 			<Head>
-				<title>Expense.fyi - Investments</title>
+				<title>Quanlychitieu.fun - Đầu tư</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 			</Head>
 
 			<div className="h-ful mb-20">
 				<div className="mb-2 flex justify-between">
-					<h1 className="mb-2 mr-3 text-2xl font-extrabold text-black max-sm:mb-4 max-sm:ml-[45px]">Investments</h1>
+					<h1 className="mb-2 mr-3 text-2xl font-extrabold text-black max-sm:mb-4 max-sm:ml-[45px]">Đầu tư</h1>
 				</div>
 
-				<h2 className="mb-4 text-black">Summary</h2>
+				<Gap.XS />
 				{isLoading ? (
 					<LoaderCard nums={2} />
 				) : (
 					<div className="mb-6 grid grid-cols-1 gap-6 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-						<Card title="Total Investments" className="relative" data={data.length} />
+						<Card title="Các khoản đầu tư" className="relative" data={data.length} />
 						<Card
-							title="Total Amount"
+							title="Tổng"
 							className="relative"
 							data={formatCurrency(
 								data.reduce((acc, datum) => Number(datum.price) * datum.units + acc, 0),

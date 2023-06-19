@@ -29,14 +29,14 @@ export default function Settings({ user }) {
 	return (
 		<>
 			<Head>
-				<title>Expense.fyi - Settings</title>
+				<title>Quanlychitieu.fun - Cài đặt</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 			</Head>
 
 			<Script src="https://app.lemonsqueezy.com/js/lemon.js" async onLoad={setupLemonSqueezy} />
 
 			<div className="h-ful mb-20">
-				<h1 className="mb-4 text-2xl font-extrabold text-black max-sm:mb-4 max-sm:ml-[45px]">Settings</h1>
+				<h1 className="mb-4 text-2xl font-extrabold text-black max-sm:mb-4 max-sm:ml-[45px]">Cài đặt</h1>
 				<SettingsLayout>
 					<General user={user} />
 					<Usage user={user} />

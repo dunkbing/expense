@@ -23,16 +23,16 @@ export default function WelcomeEmail() {
 	return (
 		<Html>
 			<Head />
-			<Preview>Welcome to Expense.fyi</Preview>
+			<Preview>Welcome to Quanlychitieu.fun</Preview>
 			<Section style={main}>
 				<Container style={container}>
 					<Section style={{ marginTop: '20px' }}>
 						<Img src={`${baseUrl}/static/icons/logo.png`} width="50" height="50" alt="Logo" style={logo} />
 					</Section>
-					<Text style={{ ...h1, marginTop: '20px' }}>Welcome to Expense.fyi</Text>
+					<Text style={{ ...h1, marginTop: '20px' }}>Welcome to Quanlychitieu.fun</Text>
 					<Text style={text}>
-						I{"'"}m Gokul, creator of the Expense.fyi, an open-source app to deliver financial clarity through spending
-						analysis. We are excited to have you on board.
+						I{"'"}m Gokul, creator of the Quanlychitieu.fun, an open-source app to deliver financial clarity through
+						spending analysis. We are excited to have you on board.
 					</Text>
 					<Text style={text}>Here is how you can get started:</Text>
 					<Text style={{ ...text, margin: '8px' }}>
@@ -40,7 +40,7 @@ export default function WelcomeEmail() {
 						<Link href={demoVideoUrl} target="_blank" style={{ ...link, textDecoration: 'underline' }}>
 							demo
 						</Link>{' '}
-						to know how its done in Expense.fyi.
+						to know how its done in Quanlychitieu.fun.
 					</Text>
 					<Text style={{ ...text, margin: '8px' }}>
 						2. Star our{' '}

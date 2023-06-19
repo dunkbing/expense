@@ -13,26 +13,27 @@ import Premium from 'components/Plans/Premium';
 import { siteUrls, tiers } from 'constants/index';
 
 const features = [
+	// {
+	// 	name: 'Secure Sign in',
+	// 	Icon: () => (
+	// 		<svg
+	// 			className="ml-[-6px] mr-2 mt-[1px]"
+	// 			xmlns="http://www.w3.org/2000/svg"
+	// 			height="20"
+	// 			width="20"
+	// 			fill="currentColor"
+	// 		>
+	// 			<path d="M10 18q-.625 0-1.062-.438Q8.5 17.125 8.5 16.5h3q0 .625-.438 1.062Q10.625 18 10 18Zm-3-2.5V14h6v1.5ZM6.688 13q-1.292-.792-1.99-2.135Q4 9.521 4 8q0-2.5 1.75-4.25T10 2q2.5 0 4.25 1.75T16 8q0 1.521-.698 2.865-.698 1.343-1.99 2.135Zm.479-1.5h5.666q.792-.646 1.229-1.562Q14.5 9.021 14.5 8q0-1.875-1.312-3.188Q11.875 3.5 10 3.5q-1.875 0-3.188 1.312Q5.5 6.125 5.5 8q0 1.021.438 1.938.437.916 1.229 1.562Zm2.833 0Z" />
+	// 		</svg>
+	// 	),
+	// 	description: 'Use your email to securely log in to the application; no password is required.',
+	// 	screenshotUrl: '/static/demo/signin.jpg',
+	// 	demoUrl: '/static/demo/signin.mp4',
+	// },
 	{
-		name: 'Secure Sign in',
-		Icon: () => (
-			<svg
-				className="ml-[-6px] mr-2 mt-[1px]"
-				xmlns="http://www.w3.org/2000/svg"
-				height="20"
-				width="20"
-				fill="currentColor"
-			>
-				<path d="M10 18q-.625 0-1.062-.438Q8.5 17.125 8.5 16.5h3q0 .625-.438 1.062Q10.625 18 10 18Zm-3-2.5V14h6v1.5ZM6.688 13q-1.292-.792-1.99-2.135Q4 9.521 4 8q0-2.5 1.75-4.25T10 2q2.5 0 4.25 1.75T16 8q0 1.521-.698 2.865-.698 1.343-1.99 2.135Zm.479-1.5h5.666q.792-.646 1.229-1.562Q14.5 9.021 14.5 8q0-1.875-1.312-3.188Q11.875 3.5 10 3.5q-1.875 0-3.188 1.312Q5.5 6.125 5.5 8q0 1.021.438 1.938.437.916 1.229 1.562Zm2.833 0Z" />
-			</svg>
-		),
-		description: 'Use your email to securely log in to the application; no password is required.',
-		screenshotUrl: '/static/demo/signin.jpg',
-		demoUrl: '/static/demo/signin.mp4',
-	},
-	{
-		name: 'Privacy',
-		description: 'Your private data, such as name, price, and notes, etc., is securely encrypted in the database.',
+		name: 'Sự riêng tư',
+		description:
+			'Dữ liệu riêng tư của bạn, chẳng hạn như tên, giá và ghi chú, v.v., được mã hóa an toàn trong cơ sở dữ liệu.',
 		Icon: () => (
 			<svg
 				className="ml-[-6px] mr-2 mt-[-1px]"
@@ -47,8 +48,8 @@ const features = [
 		screenshotUrl: '/static/demo/expenses.jpg',
 	},
 	{
-		name: 'Reports',
-		description: 'You can understand your spending habits by viewing detailed reports on the overview page. ',
+		name: 'Báo cáo',
+		description: 'Giúp bạn hiểu thói quen chi tiêu của mình bằng cách xem các báo cáo chi tiết trên trang tổng quan.',
 		Icon: () => (
 			<svg
 				className="ml-[-6px] mr-2 mt-[1px]"
@@ -63,8 +64,8 @@ const features = [
 		screenshotUrl: '/static/demo/overview.jpg',
 	},
 	{
-		name: 'Recurring Subscriptions',
-		description: 'Easily track subscriptions; no need to remember renewal dates or maintain a messy spreadsheet.',
+		name: 'Trả góp định kỳ',
+		description: 'Dễ dàng theo dõi trả góp; không cần phải nhớ ngày gia hạn hoặc duy trì một bảng tính lộn xộn.',
 		Icon: () => (
 			<svg
 				className="ml-[-6px] mr-2 mt-[1px]"
@@ -81,9 +82,9 @@ const features = [
 	},
 
 	{
-		name: 'Multi-device & Cross-platform',
+		name: 'Đa thiết bị & Đa nền tảng',
 		description:
-			'Access from multiple devices, including smartphones and laptops, makes it easy to track expenses on-the-go from any device.',
+			'Truy cập từ nhiều thiết bị, bao gồm cả điện thoại thông minh và máy tính xách tay, giúp bạn dễ dàng theo dõi chi phí khi đang di chuyển từ bất kỳ thiết bị nào.',
 		Icon: () => (
 			<svg
 				className="ml-[-6px] mr-2 mt-[1px]"
@@ -98,8 +99,8 @@ const features = [
 		screenshotUrl: '/static/demo/responsive.jpg',
 	},
 	{
-		name: 'Export Data',
-		description: 'Export your data in the CSV file format, which is widely supported.',
+		name: 'Xuất dữ liệu',
+		description: 'Xuất dữ liệu của bạn ở định dạng tệp CSV được hỗ trợ rộng rãi, và có thể mở bằng excel',
 		Icon: () => (
 			<svg
 				className="ml-[-6px] mr-2 mt-[1px] h-5 w-5"
@@ -134,7 +135,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Expense.fyi – Track your expenses with ease</title>
+				<title>Quanlychitieu.fun – Track your expenses with ease</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 			</Head>
 
@@ -151,7 +152,7 @@ export default function Home() {
 							href={signInUrl}
 							className="leading-2 mr-4 inline-flex h-[36px] items-center overflow-hidden rounded-full bg-zinc-900 px-4 py-1 text-sm font-medium text-white transition hover:bg-zinc-700"
 						>
-							Sign in
+							Đăng nhập
 						</Link>
 					</header>
 				</div>
@@ -180,40 +181,24 @@ export default function Home() {
 				<div className="relative z-10 m-auto max-w-5xl pt-4">
 					<div className="mx-auto mb-16 mt-16 max-w-md px-3 text-center sm:max-w-lg sm:px-0">
 						<h1 className="mt-4	text-4xl font-black leading-[1.15] tracking-[-0.03em] text-black sm:text-5xl sm:leading-[1.15]">
-							Effortlessly Track and Manage{' '}
+							Dễ dàng theo dõi và quản lý{' '}
 							<span className="bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent">
-								Expenses.
+								các khoản chi phí.
 							</span>
 						</h1>
 						<p className="font-default mt-5 text-base  leading-7 sm:text-lg">
-							Our easy-to-use platform allows you to track and categorize your spending, giving you a clear picture of
-							your financials.
+							Nền tảng dễ sử dụng, cho phép bạn theo dõi và phân loại các khoản chi tiêu của mình, mang đến cho bạn bức
+							tranh rõ ràng về tình hình tài chính của mình.
 						</p>
 						<p className="font-default mt-2 hidden text-base leading-7 sm:text-lg">
-							Sign up today and take control of your finances with ease!
+							Đăng ký ngay hôm nay và kiểm soát tài chính của bạn một cách dễ dàng!
 						</p>
 						<div className="mt-12 flex justify-center">
 							<Link
 								href={signUpUrl}
 								className="inline-flex h-[36px] items-center justify-center rounded-full bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white hover:bg-zinc-700 hover:shadow"
 							>
-								Try it for Free
-							</Link>
-							<Link
-								href={siteUrls.githubUrl}
-								className="ml-6 inline-flex h-[36px] items-center justify-center  rounded-full bg-white/0 px-4 py-2.5 text-sm font-medium text-slate-900 ring-1 ring-slate-900/10 hover:bg-gray-100 hover:shadow"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="16"
-									height="16"
-									className="mr-2"
-									fill="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
-								</svg>
-								Star on GitHub
+								Miễn phí sử dụng
 							</Link>
 						</div>
 					</div>
@@ -221,37 +206,37 @@ export default function Home() {
 					<div className="mx-auto mb-16 mt-16 max-w-md px-3 text-center sm:max-w-lg sm:px-0">
 						<h2 className="mt-4 text-3xl font-extrabold tracking-[-0.03em] text-black sm:text-4xl">
 							<span className="bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent">
-								Why to use
+								Tại sao nên dùng
 							</span>{' '}
-							Expense.fyi?
+							Quanlychitieu.fun?
 						</h2>
 						<ul className="mt-6 list-decimal px-4 text-left leading-6 [counter-reset:section] sm:px-2">
 							<li className="before::h-2 font-default mt-4 text-base  sm:text-lg">
-								<b className="font-sans font-bold text-black">Easy to use:</b> Track expenses on-the-go with
-								categorization and logging.
+								<b className="font-sans font-bold text-black">Dễ sử dụng:</b>Theo dõi chi phí với phân loại và ghi nhật
+								ký.
 							</li>
 							<li className="before::h-2 font-default mt-4 text-base  sm:text-lg">
-								<b className="font-sans font-bold text-black">Data-driven insights:</b> Expense tracker can provide
-								valuable insights into your spending habits, allowing you to make more informed decisions.
+								<b className="font-sans font-bold text-black">Thông tin chi tiết dựa trên dữ liệu:</b> Trình theo dõi
+								chi phí có thể cung cấp thông tin chi tiết có giá trị về thói quen chi tiêu của bạn, cho phép bạn đưa ra
+								quyết định sáng suốt hơn.
 							</li>
 							<li className="before::h-2 font-default mt-4 text-base  sm:text-lg">
-								<b className="font-sans font-bold text-black">Identify overspending:</b> Take control of your finances
-								by identifying and reducing overspending with an expense tracker.
+								<b className="font-sans font-bold text-black">Xác định bội chi:</b> Kiểm soát tài chính của bạn bằng
+								cách xác định và giảm bội chi với công cụ theo dõi chi phí.
 							</li>
 							<li className="before::h-2 font-default mt-4 text-base  sm:text-lg">
-								<b className="font-sans font-bold text-black">Real-time visibility:</b> Monitor your expenses in
-								real-time, whether you are at home or on-the-go, with a user-friendly interface
+								<b className="font-sans font-bold text-black">Hiển thị thời gian thực:</b> Theo dõi chi phí của bạn
+								trong thời gian thực, cho dù bạn đang ở nhà hay đang di chuyển, với giao diện thân thiện với người dùng
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div className="mx-auto mb-16 mt-16 max-w-2xl px-3 ">
 					<h2 className="mb-12 mt-8 text-center text-3xl font-extrabold tracking-[-0.03em] text-black sm:text-4xl">
-						Simple yet,{' '}
+						Đơn giản, nhưng{' '}
 						<span className="bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent">
-							Powerful
+							Nhiều tính năng
 						</span>{' '}
-						Features.
 					</h2>
 					<div className="mt-10 grid grid-cols-1 justify-center gap-10 p-5 lg:grid-cols-2 lg:gap-20">
 						<div className="mx-auto block h-fit max-w-sm rounded-2xl  border-[1px] bg-white p-2 sm:w-96 lg:ml-[-50px]">
@@ -281,7 +266,6 @@ export default function Home() {
 												</div>
 											</div>
 										</button>
-
 										<p
 											className={`mb-[6px] mt-[6px] overflow-hidden  border-zinc-600 bg-white pl-[10px] text-[14px] font-medium text-zinc-600 transition-all duration-500 ${
 												isSelected ? 'max-h-28' : 'max-h-0'
@@ -313,7 +297,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div className="mx-auto mb-16 mt-16 grid max-w-md justify-center px-3 text-center sm:px-0 md:max-w-[600px]">
+				{/* <div className="mx-auto mb-16 mt-16 grid max-w-md justify-center px-3 text-center sm:px-0 md:max-w-[600px]">
 					<h2 className="mt-0 text-3xl font-extrabold tracking-[-0.03em] text-black sm:text-4xl">
 						Our{' '}
 						<span className="bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent">
@@ -323,7 +307,6 @@ export default function Home() {
 					<p className="font-default mt-3 text-base leading-7 sm:text-lg">
 						Start for free, no credit card is required.
 					</p>
-
 					<div className="relative mb-4 mt-4 hidden min-w-[245px] justify-center">
 						<div className="mt-6 rounded-3xl border border-zinc-800 bg-zinc-900 p-0.5">
 							<div className="flex">
@@ -353,34 +336,7 @@ export default function Home() {
 						<Basic />
 						<Premium />
 					</div>
-				</div>
-				<div className="mx-auto mb-16 mt-16 max-w-md px-3 text-center sm:max-w-lg sm:px-0">
-					<h2 className="mt-4 text-3xl font-extrabold tracking-[-0.03em] text-black sm:text-4xl sm:leading-[3.5rem]">
-						Proudly{' '}
-						<span className="bg-gradient-to-r from-blue-400 to-sky-600 bg-clip-text text-transparent">
-							Open Sourced!
-						</span>
-					</h2>
-					<p className="font-default mt-3 text-base leading-7 sm:text-lg">
-						Source code is available on GitHub - feel free to read, review, or contribute to it!
-					</p>
-					<Link
-						href={siteUrls.githubUrl}
-						className="mt-6 inline-flex h-[36px] items-center justify-center  rounded-full bg-white/0 px-4 py-2.5 text-sm font-medium text-slate-900 ring-1 ring-slate-900/10 hover:bg-gray-100 hover:shadow"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							className="mr-2"
-							fill="currentColor"
-							viewBox="0 0 24 24"
-						>
-							<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
-						</svg>
-						Star on GitHub
-					</Link>
-				</div>
+				</div> */}
 				<Footer />
 				{/* preload videos */}
 				{features.map(({ name, demoUrl }) =>

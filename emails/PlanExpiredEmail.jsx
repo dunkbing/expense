@@ -32,7 +32,7 @@ export default function PlanExpiredEmail({ plan = 'Premium Plan' }) {
 					</Text>
 					<Text style={{ ...text, marginTop: '10px' }}>
 						No worries, all data still there. Renew <b>Premium Plan</b> to continue enjoying premium features on
-						Expense.fyi.
+						Quanlychitieu.fun.
 					</Text>
 
 					<Section style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
