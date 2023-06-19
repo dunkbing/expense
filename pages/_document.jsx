@@ -31,6 +31,7 @@ export default function Document() {
 				<meta name="twitter:site" content="@gokul_i" />
 				<meta name="twitter:url" content="https://quanlychitieu.fun/" />
 				<meta name="twitter:description" content="Dễ dàng theo dõi và quản lý các khoản chi phí." />
+				<meta name="google-site-verification" content="ojKd1typnE6YezWzbRIkqBOjYKX1KMRs374I4QCMkrk" />
 				<link href="/static/icons/icon.svg" rel="icon" type="image/svg+xml" />
 				<link href="/static/icons/favicon.ico" rel="alternate icon" sizes="any" />
 				<link href="/static/icons/apple-touch-icon.png" rel="apple-touch-icon" />
