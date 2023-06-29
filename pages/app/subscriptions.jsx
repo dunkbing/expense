@@ -135,7 +135,7 @@ export default function Subscriptions({ user }) {
 					<LoaderCard nums={4} />
 				) : (
 					<div className="mb-6 grid grid-cols-1 gap-6 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-						<Card title="Các khoản trả góp" className="relative" data={data.length} />
+						<Card title="Khoản trả góp" className="relative" data={data.length} />
 
 						<Card
 							title="Đang diễn ra - Đã huỷ"

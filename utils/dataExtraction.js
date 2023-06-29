@@ -75,7 +75,7 @@ export const extractRecentActivityData = (subscriptionsData, expensesData, inves
 		...subscriptionsData.map((datum) => ({ ...datum, from: 'subcriptions' })),
 		...expensesData.map((datum) => ({ ...datum, from: 'expenses' })),
 		...investmentsData.map((datum) => ({ ...datum, from: 'investments' })),
-		...incomeData.map((datum) => ({ ...datum, from: 'income' })),
+		...incomeData.map((datum) => ({ ...datum, from: 'incomes' })),
 	];
 	return sortByKey(allData, 'updated_at').filter((_, index) => index <= recentIndex);
 };

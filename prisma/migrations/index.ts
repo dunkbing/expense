@@ -3,7 +3,7 @@
 import type { PrismaClient } from '@prisma/client'
 import { migrate as migratesubscriptions } from './subscriptions'
 import { migrate as migrateexpenses } from './expenses'
-import { migrate as migrateincome } from './income'
+import { migrate as migrateincomes } from './incomes'
 import { migrate as migrateinvestments } from './investments'
 
 export interface ProgressReport {
@@ -39,7 +39,7 @@ export const defaultProgressReport: ProgressReportCallback = ({
 export type MigrationReport = {
   subscriptions: number,
   expenses: number,
-  income: number,
+  incomes: number,
   investments: number
 }
 
@@ -49,7 +49,7 @@ export type MigrationReport = {
  * Processed models:
  * - subscriptions
  * - expenses
- * - income
+ * - incomes
  * - investments
  *
  * @returns a dictionary of the number of processed records per model.
@@ -61,18 +61,18 @@ export async function migrate(
   const [
     processedsubscriptions,
     processedexpenses,
-    processedincome,
+    processedincomes,
     processedinvestments
   ] = await Promise.all([
     migratesubscriptions(client, reportProgress),
     migrateexpenses(client, reportProgress),
-    migrateincome(client, reportProgress),
+    migrateincomes(client, reportProgress),
     migrateinvestments(client, reportProgress)
   ])
   return {
     subscriptions: processedsubscriptions,
     expenses: processedexpenses,
-    income: processedincome,
+    incomes: processedincomes,
     investments: processedinvestments
   }
 }

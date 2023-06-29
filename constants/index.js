@@ -20,10 +20,10 @@ export const expensesCategory = {
 
 export const expensesPaidViaList = {
 	cash: { name: 'Cash', emoji: '💵' },
-	creditcard: { name: 'Credit Card', emoji: '💳' },
-	debitcard: { name: 'Debit Card', emoji: '💳' },
-	ewallet: { name: 'E-Wallet', emoji: '🪪' },
-	netbanking: { name: 'NetBanking', emoji: '🏦' },
+	creditCard: { name: 'Credit Card', emoji: '💳' },
+	debitCard: { name: 'Debit Card', emoji: '💳' },
+	eWallet: { name: 'E-Wallet', emoji: '🪪' },
+	netBanking: { name: 'NetBanking', emoji: '🏦' },
 	upi: { name: 'UPI', emoji: '📲' },
 };
 
@@ -151,13 +151,13 @@ export const sentFromEmailId = 'Gokul from Quanlychitieu.fun <hello@quanlychitie
 export const shortcuts = {
 	sidebar: {
 		overview: { path: '/', shortcut: 'o' },
-		income: { path: '/income', shortcut: 'i' },
+		incomes: { path: '/incomes', shortcut: 'i' },
 		expenses: { path: '/expenses', shortcut: 'e' },
 		subscriptions: { path: '/subscriptions', shortcut: 's' },
 		investments: { path: '/investments', shortcut: 'v' },
 	},
 	expenses: { add: { shortcut: 'a' } },
-	income: { add: { shortcut: 'a' } },
+	incomes: { add: { shortcut: 'a' } },
 	subscriptions: { add: { shortcut: 'a' } },
 	investments: { add: { shortcut: 'a' } },
 	overview: {

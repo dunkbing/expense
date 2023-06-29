@@ -6,7 +6,7 @@ export default withUserAuth(async (req, res, user) => {
 		const { start, end, categories = '' } = req.query;
 		const categoriesList = categories.split(',');
 		try {
-			const data = await prisma.income.findMany({
+			const data = await prisma.incomes.findMany({
 				where: {
 					user_id: user.id,
 					date: { lte: end, gte: start },

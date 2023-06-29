@@ -39,7 +39,7 @@ export default function Home({ user }) {
 	const rangeParams = `start=${selectedDateObj.start}&end=${selectedDateObj.end}`;
 	const { data: expensesData = [], isLoading: isExpensesLoading } = useSWR(`/api/expenses/range?${rangeParams}`);
 	const { data: investmentsData = [] } = useSWR(`/api/investments/range?${rangeParams}`);
-	const { data: incomeData = [], isLoading } = useSWR(`/api/income/range?${rangeParams}`);
+	const { data: incomeData = [], isLoading } = useSWR(`/api/incomes/range?${rangeParams}`);
 	const { data: subscriptionsData = [], isLoading: isSubsLoading } = useSWR(`/api/subscriptions/all?${rangeParams}`);
 
 	const chartdata = useMemo(() => extractExpensesData(expensesData, user.locale), [expensesData, user.locale]);

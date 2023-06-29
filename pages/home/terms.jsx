@@ -8,7 +8,7 @@ export default function Terms() {
 	return (
 		<>
 			<Head>
-				<title>Quanlychitieu.fun – Terms of use</title>
+				<title>Quanlychitieu.fun – Điều khoản sử dụng</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 			</Head>
 
@@ -44,79 +44,76 @@ export default function Terms() {
 				</div>
 				<div className="font-default m-4 mt-4 h-full max-w-3xl pt-3 sm:m-4 sm:mt-8 lg:m-auto">
 					<h1 className="mb-6 mt-10 text-center text-3xl font-black leading-[1.15] tracking-[-0.03em] sm:text-4xl sm:leading-[1.15]">
-						Terms & Conditions
+						Điều khoản và điều kiện
 					</h1>
 					<p className="mt-2">
-						By downloading or using the app, these terms will automatically apply to you – you should make sure
-						therefore that you read them carefully before using the app. You{"'"}re not allowed to copy or modify the
-						app, any part of the app, or our trademarks in any way.
+						Bằng cách tải xuống hoặc sử dụng ứng dụng, các điều khoản này sẽ tự động áp dụng cho bạn – do đó bạn nên đảm
+						bảo rằng mình đã đọc kỹ các điều khoản này trước khi sử dụng ứng dụng. Bạn không được phép sao chép hoặc sửa
+						đổi ứng dụng, bất kỳ phần nào của ứng dụng hoặc nhãn hiệu của chúng tôi dưới bất kỳ hình thức nào.
 					</p>
 					<p className="mt-2">
-						You{'’'}re not allowed to attempt to extract the source code of the app, and you also shouldn{'’'}t try to
-						translate the app into other languages or make derivative versions. The app itself, and all the trademarks,
-						copyright, database rights, and other intellectual property rights related to it, still belong to . is
-						committed to ensuring that the app is as useful and efficient as possible.
+						Bạn không được phép tìm cách trích xuất mã nguồn của ứng dụng và bạn cũng không nên cố dịch ứng dụng sang
+						các ngôn ngữ khác hoặc tạo các phiên bản phái sinh.
 					</p>
 					<p className="mt-2">
-						For that reason, we reserve the right to make changes to the app or to charge for its services, at any time
-						and for any reason. We will never charge you for the app or its services without making it very clear to you
-						exactly what you{'’'}re paying for. The Quanlychitieu.fun app stores and processes personal data that you
-						have provided to us, to provide my Service.{' '}
+						Vì lý do đó, chúng tôi có quyền thực hiện các thay đổi đối với ứng dụng hoặc tính phí cho các dịch vụ của
+						ứng dụng bất kỳ lúc nào và vì bất kỳ lý do gì. Chúng tôi sẽ không bao giờ tính phí bạn đối với ứng dụng hoặc
+						dịch vụ của ứng dụng mà không nói rõ cho bạn biết chính xác bạn đang trả tiền cho cái gì.
 					</p>
 					<p className="mt-2">
-						{' '}
-						It{"'"}s your responsibility to keep your phone and access to the app secure. We therefore recommend that
-						you do not jailbreak or root your phone, which is the process of removing software restrictions and
-						limitations imposed by the official operating system of your device. It could make your phone vulnerable to
-						malware/viruses/malicious programs, compromise your phone{"'"}s security features and it could mean that the
-						Quanlychitieu.fun app won{"'"}t work properly or at all. You should be aware that there are certain things
-						that will not take responsibility for. Certain functions of the app will require the app to have an active
-						internet connection.
+						Bạn có trách nhiệm giữ an toàn cho điện thoại và quyền truy cập vào ứng dụng của mình. Do đó, chúng tôi
+						khuyên bạn không nên bẻ khóa hoặc root điện thoại của mình, đây là quá trình loại bỏ các hạn chế và giới hạn
+						phần mềm do hệ điều hành chính thức của thiết bị áp đặt. Nó có thể khiến điện thoại của bạn dễ bị phần mềm
+						độc hại/vi-rút/chương trình độc hại xâm nhập, ảnh hưởng đến các tính năng bảo mật của điện thoại và điều đó
+						có thể có nghĩa là ứng dụng Quanlychitieu.fun sẽ không hoạt động bình thường hoặc hoàn toàn không hoạt động.
+						Bạn nên biết rằng có một số điều sẽ không chịu trách nhiệm. Một số chức năng của ứng dụng sẽ yêu cầu ứng
+						dụng phải có kết nối Internet đang hoạt động.
 					</p>
 					<p className="mt-2">
-						The connection can be Wi-Fi or provided by your mobile network provider, but cannot take responsibility for
-						the app not working at full functionality if you don{"'"}t have access to Wi-Fi, and you don{"'"}t have any
-						of your data allowance left. If you{"'"}re using the app outside of an area with Wi-Fi, you should remember
-						that the terms of the agreement with your mobile network provider will still apply. As a result, you may be
-						charged by your mobile provider for the cost of data for the duration of the connection while accessing the
-						app, or other third-party charges. In using the app, you{"'"}re accepting responsibility for any such
-						charges, including roaming data charges if you use the app outside of your home territory (i.e. region or
-						country) without turning off data roaming. If you are not the bill payer for the device on which you{"'"}re
-						using the app, please be aware that we assume that you have received permission from the bill payer for
-						using the app.
+						Kết nối có thể là Wi-Fi hoặc do nhà cung cấp mạng di động của bạn cung cấp nhưng không thể chịu trách nhiệm
+						về việc ứng dụng không hoạt động với đầy đủ chức năng nếu bạn không có quyền truy cập Wi-Fi và bạn không có
+						bất kỳ dung lượng dữ liệu nào cho phép bên trái. Nếu bạn đang sử dụng ứng dụng bên ngoài khu vực có Wi-Fi,
+						bạn nên nhớ rằng các điều khoản của thỏa thuận với nhà cung cấp mạng di động của bạn sẽ vẫn được áp dụng. Do
+						đó, nhà cung cấp dịch vụ di động của bạn có thể tính phí dữ liệu trong suốt thời gian kết nối khi truy cập
+						ứng dụng hoặc các khoản phí khác của bên thứ ba. Khi sử dụng ứng dụng, bạn chấp nhận chịu trách nhiệm về bất
+						kỳ khoản phí nào như vậy, bao gồm cả phí chuyển vùng dữ liệu nếu bạn sử dụng ứng dụng bên ngoài lãnh thổ quê
+						hương của mình (tức là khu vực hoặc quốc gia) mà không tắt chuyển vùng dữ liệu. Nếu bạn không phải là người
+						thanh toán hóa đơn cho thiết bị mà bạn đang sử dụng ứng dụng, xin lưu ý rằng chúng tôi cho rằng bạn đã nhận
+						được sự cho phép từ người thanh toán hóa đơn để sử dụng ứng dụng.
 					</p>
 					<p className="mt-2">
-						Along the same lines, cannot always take responsibility for the way you use the app i.e. You need to make
-						sure that your device stays charged – if it runs out of battery and you can{"'"}t turn it on to avail the
-						Service, cannot accept responsibility. With respect to {"'"}s responsibility for your use of the app, when
-						you{"'"}re using the app, it{"'"}s important to bear in mind that although we endeavor to ensure that it is
-						updated and correct at all times, we do rely on third parties to provide information to us so that we can
-						make it available to you. accepts no liability for any loss, direct or indirect, you experience as a result
-						of relying wholly on this functionality of the app. At some point, we may wish to update the app. The app is
-						currently available on – the requirements for the system(and for any additional systems we decide to extend
-						the availability of the app to) may change, and you{"'"}ll need to download the updates if you want to keep
-						using the app. does not promise that it will always update the app so that it is relevant to you and/or
-						works with the version that you have installed on your device.
+						Đồng thời, không phải lúc nào bạn cũng chịu trách nhiệm về cách bạn sử dụng ứng dụng, tức là. Bạn cần đảm
+						bảo rằng thiết bị của mình luôn được sạc – nếu thiết bị hết pin và bạn không thể bật thiết bị để tận dụng
+						Dịch vụ, không thể chấp nhận trách nhiệm. Đối với việc bạn sử dụng ứng dụng, khi bạn đang sử dụng ứng dụng,
+						điều quan trọng cần lưu ý là mặc dù chúng tôi cố gắng đảm bảo rằng ứng dụng luôn được cập nhật và chính xác,
+						nhưng chúng tôi dựa vào các bên thứ ba cung cấp thông tin cho chúng tôi để chúng tôi có thể cung cấp thông
+						tin đó cho bạn. không chịu trách nhiệm pháp lý đối với bất kỳ tổn thất nào, trực tiếp hay gián tiếp, mà bạn
+						gặp phải do hoàn toàn dựa vào chức năng này của ứng dụng. Tại một số điểm, chúng tôi có thể muốn cập nhật
+						ứng dụng. Ứng dụng hiện khả dụng trên – các yêu cầu đối với hệ thống (và đối với mọi hệ thống bổ sung mà
+						chúng tôi quyết định mở rộng khả năng cung cấp ứng dụng) có thể thay đổi và bạn sẽ cần tải xuống các bản cập
+						nhật nếu muốn tiếp tục sử dụng ứng dụng. không hứa hẹn rằng nó sẽ luôn cập nhật ứng dụng để nó phù hợp với
+						bạn và/hoặc hoạt động với phiên bản mà bạn đã cài đặt trên thiết bị của mình.
 					</p>{' '}
 					<p className="mt-2">
-						However, you promise to always accept updates to the application when offered to you, We may also wish to
-						stop providing the app, and may terminate use of it at any time without giving notice of termination to you.
-						Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these
-						terms will end; (b) you must stop using the app, and (if needed) delete it from your device.
+						Tuy nhiên, bạn hứa sẽ luôn chấp nhận các bản cập nhật cho ứng dụng khi được cung cấp cho bạn. Chúng tôi cũng
+						có thể muốn ngừng cung cấp ứng dụng và có thể chấm dứt việc sử dụng ứng dụng bất kỳ lúc nào mà không cần
+						thông báo cho bạn về việc chấm dứt. Trừ khi chúng tôi có thông báo khác cho bạn, khi có bất kỳ sự chấm dứt
+						nào, (a) các quyền và giấy phép được cấp cho bạn theo các điều khoản này sẽ kết thúc; (b) bạn phải ngừng sử
+						dụng ứng dụng và (nếu cần) xóa ứng dụng đó khỏi thiết bị của mình.
 					</p>
 				</div>
 				<div className="font-default m-4 mt-4 max-w-3xl pt-3 sm:m-auto">
-					<h2 className="mb-3 mt-2 text-2xl font-extrabold leading-6">Changes to This Terms and Conditions</h2>
+					<h2 className="mb-3 mt-2 text-2xl font-extrabold leading-6">Thay đổi đối với Điều khoản và Điều kiện</h2>
 					<p className="mt-2">
-						I may update our Terms and Conditions from time to time. Thus, you are advised to review this page
-						periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on
-						this page. These terms and conditions are effective as of 2023-01-01
+						Tôi có thể cập nhật Điều khoản và Điều kiện của chúng tôi theo thời gian. Vì vậy, bạn nên xem lại trang này
+						định kỳ để biết bất kỳ thay đổi nào. Tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào bằng cách đăng Điều
+						khoản và Điều kiện mới trên trang này. Các điều khoản và điều kiện này có hiệu lực kể từ ngày 01/01/2023
 					</p>
 				</div>
 				<div className="font-default relative m-4 mb-20 mt-3 max-w-3xl pt-3 sm:m-auto sm:mb-20">
 					<h2 className="mb-3 mt-2 text-2xl font-extrabold leading-6">Contact Us</h2>
 					<p className="mt-2">
-						If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at{' '}
+						Nếu có bất kỳ câu hỏi hoặc đề xuất nào về Chính sách quyền riêng tư, vui lòng liên hệ theo địa chỉ
 						<a className="border-b-[1px] border-black pb-[1px]" href="mailto:hello@quanlychitieu.fun.">
 							hello@quanlychitieu.fun.
 						</a>

@@ -75,12 +75,12 @@ const links = [
 		shortcutText: sidebar.overview.shortcut,
 	},
 	{
-		link: '/income',
-		activePath: '/app/income',
+		link: '/incomes',
+		activePath: '/app/incomes',
 		description: 'Thêm thu nhập của bạn ở đây',
 		name: 'Thu nhập',
 		Icon: IncomeIcon,
-		shortcutText: sidebar.income.shortcut,
+		shortcutText: sidebar.incomes.shortcut,
 	},
 	{
 		link: '/expenses',
@@ -119,7 +119,7 @@ export default function Sidebar({ user, className, overrideClassname, onHide, sh
 	useHotkeys(sidebarShortcutsList, (_, handler) => {
 		const keys = handler.keys.join('');
 		if (keys === sidebar.overview.shortcut) router.push('/');
-		if (keys === sidebar.income.shortcut) router.push('/income');
+		if (keys === sidebar.incomes.shortcut) router.push('/incomes');
 		if (keys === sidebar.expenses.shortcut) router.push('/expenses');
 		if (keys === sidebar.investments.shortcut) router.push('/investments');
 		if (keys === sidebar.subscriptions.shortcut) router.push('/subscriptions');

@@ -23,7 +23,7 @@ import { getApiUrl } from 'utils/url';
 
 import { shortcuts } from 'constants/index';
 
-const addShortcutKey = Object.values(shortcuts.income.add.shortcut);
+const addShortcutKey = Object.values(shortcuts.incomes.add.shortcut);
 
 export default function Income({ user }) {
 	const [loading, setLoading] = useState(false);
@@ -33,7 +33,7 @@ export default function Income({ user }) {
 	const [categories, setCategories] = useState([]);
 	useHotkeys(addShortcutKey, () => !isLoading && setShow(true));
 
-	const { data = [], mutate, isLoading } = useSWR(getApiUrl(filterKey, 'income', categories));
+	const { data = [], mutate, isLoading } = useSWR(getApiUrl(filterKey, 'incomes', categories));
 
 	const onHide = () => setShow(false);
 	const onEdit = (selected) => {
@@ -42,7 +42,7 @@ export default function Income({ user }) {
 	};
 
 	const onSubmit = async (data) => {
-		let url = '/api/income/create';
+		let url = '/api/incomes/create';
 		let method = 'POST';
 		let body = JSON.stringify(data);
 		const isEditing = selected && selected.id;
@@ -50,7 +50,7 @@ export default function Income({ user }) {
 		setLoading(true);
 
 		if (isEditing) {
-			url = '/api/income/update';
+			url = '/api/incomes/update';
 			method = 'PATCH';
 		}
 
@@ -79,7 +79,7 @@ export default function Income({ user }) {
 
 	const onDelete = async (id) => {
 		try {
-			const res = await fetch('/api/income/delete', {
+			const res = await fetch('/api/incomes/delete', {
 				method: 'DELETE',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({ id }),

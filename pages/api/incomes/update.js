@@ -10,7 +10,7 @@ export default withUserAuth(async (req, res) => {
 		}
 
 		try {
-			await prisma.income.update({
+			await prisma.incomes.update({
 				data: { notes, name, price, date, category },
 				where: { id },
 			});

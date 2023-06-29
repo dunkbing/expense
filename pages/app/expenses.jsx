@@ -129,7 +129,7 @@ export default function Expenses({ user }) {
 					<LoaderCard nums={2} />
 				) : (
 					<div className="mb-6 grid grid-cols-1 gap-6 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-						<Card title="Tổng chi tiêu" className="relative" data={data.length} />
+						<Card title="Khoản chi" className="relative" data={data.length} />
 						<Card
 							title="Tổng"
 							className="relative"

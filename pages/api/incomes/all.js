@@ -7,7 +7,7 @@ export default withUserAuth(async (req, res, user) => {
 		const categoriesList = categories.split(',');
 
 		try {
-			const data = await prisma.income.findMany({
+			const data = await prisma.incomes.findMany({
 				where: { user_id: user.id, OR: categoriesList.map((category) => ({ category: { contains: category } })) },
 				select: {
 					notes: true,
@@ -26,7 +26,7 @@ export default withUserAuth(async (req, res, user) => {
 
 			res.status(200).json(data);
 		} catch (error) {
-			res.status(500).json({ error, message: 'Failed to get the all income' });
+			res.status(500).json({ error, message: 'Failed to get the all incomes' });
 		}
 	} else {
 		res.setHeader('Allow', ['GET']);
