@@ -3,7 +3,7 @@ import Router from 'next/router';
 import { useEffect, useState } from 'react';
 
 import * as Tooltip from '@radix-ui/react-tooltip';
-import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
+import { createPagesBrowserClient } from '@supabase/auth-helpers-nextjs';
 import { SessionContextProvider } from '@supabase/auth-helpers-react';
 import NProgress from 'nprogress';
 import { Toaster } from 'react-hot-toast';
@@ -18,7 +18,7 @@ import 'styles/globals.css';
 import 'nprogress/nprogress.css';
 
 export default function App({ Component, pageProps }) {
-	const [supabaseClient] = useState(() => createBrowserSupabaseClient());
+	const [supabaseClient] = useState(() => createPagesBrowserClient());
 
 	useEffect(() => {
 		NProgress.configure({ showSpinner: false });
