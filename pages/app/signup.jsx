@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import { useEffect, useRef, useState } from 'react';
 
-import { createServerSupabaseClient } from '@supabase/auth-helpers-nextjs';
+import { createPagesServerClient } from '@supabase/auth-helpers-nextjs';
 import { useUser } from '@supabase/auth-helpers-react';
 import SvgLogoBlack from 'public/static/icons/logo.svg';
 
@@ -171,7 +171,7 @@ export default function Signup() {
 }
 
 export const getServerSideProps = async (context) => {
-	const supabase = createServerSupabaseClient(context);
+	const supabase = createPagesServerClient(context);
 
 	const { data } = await supabase.auth.getSession();
 	const { session } = data;

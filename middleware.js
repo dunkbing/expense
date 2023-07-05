@@ -1,7 +1,7 @@
 // Multi tenent domain: https://vercel.com/guides/nextjs-multi-tenant-application
 import { NextResponse } from 'next/server';
 
-import { createMiddlewareSupabaseClient } from '@supabase/auth-helpers-nextjs';
+import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs';
 
 import { siteUrls } from 'constants/index';
 
@@ -16,7 +16,7 @@ export async function middleware(req) {
 	const path = url.pathname;
 
 	// Check user authenticated
-	const supabase = createMiddlewareSupabaseClient({ req, res });
+	const supabase = createMiddlewareClient({ req, res });
 	const { data } = await supabase.auth.getSession();
 	const { session } = data;
 

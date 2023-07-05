@@ -1,4 +1,4 @@
-import { createServerSupabaseClient } from '@supabase/auth-helpers-nextjs';
+import { createPagesServerClient } from '@supabase/auth-helpers-nextjs';
 
 import prisma from 'lib/prisma';
 import { hasPremiumBillingCycleEnded } from 'lib/usage';
@@ -7,7 +7,7 @@ import { tierNames } from 'constants/index';
 
 export default function enforceAuth(req, res) {
 	return async (context) => {
-		const supabase = createServerSupabaseClient(context);
+		const supabase = createPagesServerClient(context);
 
 		// Get auth table info
 		const { data } = await supabase.auth.getSession();

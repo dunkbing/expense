@@ -1,11 +1,11 @@
-import { createServerSupabaseClient } from '@supabase/auth-helpers-nextjs';
+import { createPagesServerClient } from '@supabase/auth-helpers-nextjs';
 
 export default async function handle(req, res) {
 	if (req.method === 'POST') {
 		const { email, password } = req.body;
 
 		try {
-			const supbaseAdmin = createServerSupabaseClient({ req, res });
+			const supbaseAdmin = createPagesServerClient({ req, res });
 			const { data, error } = await supbaseAdmin.auth.signInWithPassword({
 				email,
 				password,
