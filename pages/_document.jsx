@@ -1,7 +1,4 @@
 import { Head, Html, Main, NextScript } from 'next/document';
-import Script from 'next/script';
-
-const GOOGLE_ANALYTICS_ID = process.env.GA4_ANALYTICS_ID;
 
 export default function Document() {
 	return (
@@ -32,6 +29,7 @@ export default function Document() {
 				<meta name="twitter:url" content="https://quanlychitieu.fun/" />
 				<meta name="twitter:description" content="Dễ dàng theo dõi và quản lý các khoản chi phí." />
 				<meta name="google-site-verification" content="ojKd1typnE6YezWzbRIkqBOjYKX1KMRs374I4QCMkrk" />
+				<meta name="google-site-verification" content="xJHumtLuemPl4mBU8BN5g0t5qp4OShdj6AnF318EOCc" />
 				<link href="/static/icons/icon.svg" rel="icon" type="image/svg+xml" />
 				<link href="/static/icons/favicon.ico" rel="alternate icon" sizes="any" />
 				<link href="/static/icons/apple-touch-icon.png" rel="apple-touch-icon" />
