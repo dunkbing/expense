@@ -4,6 +4,7 @@ export const expensesCategory = {
 	entertainment: { name: 'Entertainment', emoji: '🍿' },
 	bills: { name: 'Bills', emoji: '🧾' },
 	food: { name: 'Food', emoji: '🍔' },
+	drink: { name: 'Drink', emoji: '🥤' },
 	grocery: { name: 'Grocery', emoji: '🛒' },
 	order: { name: 'Online Order', emoji: '📦' },
 	other: { name: 'Others', emoji: '🤷🏻‍♂️' },
@@ -15,7 +16,7 @@ export const expensesCategory = {
 	medical: { name: 'Medical', emoji: '🏥' },
 	rent: { name: 'Rent', emoji: '🏠' },
 	shopping: { name: 'Shopping', emoji: '🛍️' },
-	travel: { name: 'Travel', emoji: '✈️' },
+	travel: { name: 'Travel', emoji: '🛩️' },
 };
 
 export const expensesPaidViaList = {
@@ -28,7 +29,7 @@ export const expensesPaidViaList = {
 };
 
 export const groupedExpensesCategory = {
-	dailyessentials: {
+	dailyEssentials: {
 		name: 'Essentials',
 		list: {
 			food: expensesCategory.food,
