@@ -1,10 +1,10 @@
 import { PrismaClient } from '@prisma/client';
-import { fieldEncryptionExtension } from 'prisma-field-encryption';
+import { fieldEncryptionMiddleware } from 'prisma-field-encryption';
 
 const prisma = new PrismaClient();
 
-prisma.$extends(
-	fieldEncryptionExtension({
+prisma.$use(
+	fieldEncryptionMiddleware({
 		encryptionKey: process.env.PRISMA_FIELD_ENCRYPTION_KEY,
 	})
 );
