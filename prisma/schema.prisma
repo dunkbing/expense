@@ -123,7 +123,7 @@ model feedbacks {
   os         String?
 }
 
-model contact {
+model contacts {
   id         Int      @id @default(autoincrement())
   message    String
   subject    String
