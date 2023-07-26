@@ -4,7 +4,7 @@ export default async function handle(req, res) {
 	if (req.method === 'POST') {
 		const { subject, email, message } = req.body;
 		try {
-			await prisma.contact.create({ data: { subject, email, message } });
+			await prisma.contacts.create({ data: { subject, email, message } });
 
 			res.status(201).json({ message: 'We have received your details. Thanks for contacting us.' });
 		} catch (error) {
