@@ -53,7 +53,7 @@
 		"react-email": "^1.9.3",
 		"react-hot-toast": "^2.4.1",
 		"react-hotkeys-hook": "^4.4.0",
-		"resend": "^0.14.0",
+		"resend": "^0.17.2",
 		"shortid": "^2.2.16",
 		"swr": "^2.1.5",
 		"text-filter": "^0.1.1"
